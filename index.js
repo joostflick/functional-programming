@@ -1,11 +1,15 @@
 const OBA = require('oba-api');
 var fs = require('fs');
+require('dotenv').config()
 
+
+console.log(process.env.DB_PUBLIC),
+console.log(process.env.DB_SECRET)
 // Setup authentication to api server
 const client = new OBA({
   // ProQuest API Keys
-  public: '1e19898c87464e239192c8bfe422f280',
-  secret: '4289fec4e962a33118340c888699438d'
+  public: process.env.DB_PUBLIC,
+  secret: process.env.DB_SECRET
 });
 
 // General usage:
@@ -17,7 +21,7 @@ const client = new OBA({
 
 // Example search to the word 'rijk' sorted by title:
 client.get('search', {
-  q: 'joost',
+  q: 'test',
   sort: 'title'
 })
   .then(res => fs.writeFile('myjsonfile.json', res, 'utf8')) // JSON results

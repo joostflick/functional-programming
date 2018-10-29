@@ -1,0 +1,21 @@
+{
+  "name": "apisearch",
+  "version": "1.0.0",
+  "description": "Tool to search the OBA API",
+  "main": "index.js",
+  "dependencies": {
+    "dotenv": "^6.1.0",
+    "oba-api": "^1.0.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "search",
+    "api",
+    "student"
+  ],
+  "author": "Joost Flick",
+  "license": "MIT"
+}

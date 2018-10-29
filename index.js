@@ -17,7 +17,7 @@ const client = new OBA({
 
 // Example search to the word 'rijk' sorted by title:
 client.get('search', {
-  q: 'COMPLETE WORKS FOR VIOLIN AND PIANO',
+  q: 'joost',
   sort: 'title'
 })
   .then(res => fs.writeFile('myjsonfile.json', res, 'utf8')) // JSON results

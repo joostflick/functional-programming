@@ -6,16 +6,19 @@ Installed Rijks module to make node.js calls to the oba API.
 $ npm install rijkvanzanten/node-oba-api
 ```
 This also turns the xml into a json object.
+
 Modified the code with 
 ```js
 fs.writeFile('myjsonfile.json', res, 'utf8')
 ```
 to be able to take a better look at the results of my search queries.
 
+with ```http://jsonviewer.stack.hu/``` I was able to see the structure of the datamodel way better. This also helped me defining my possible research subjects
+
 ### 5 possible research cases:
 
-* first
-* second
+* Meer engelstalige boeken sinds Nederland steeds internationaler is?
+* Bepaalde onderwerpen die vaker voorkomen
 * third
 * fourth
 * fifth

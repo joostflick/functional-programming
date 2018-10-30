@@ -18,8 +18,8 @@ with ```http://jsonviewer.stack.hu/``` I was able to see the structure of the da
 ### 5 possible research cases:
 
 * Meer engelstalige boeken sinds Nederland steeds internationaler is?
-* Bepaalde onderwerpen die vaker voorkomen
-* third
-* fourth
+* Bepaalde onderwerpen die vaker voorkomen, bijv: Meer boeken over programmeren?
+* Komen er steeds minder boeken bij in het assortiment?
+* Correlatie dikte van boeken en het onderwerp (worden woordenboeken dikker of dunner over tijd?)
 * fifth
 

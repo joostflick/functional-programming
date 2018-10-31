@@ -3,8 +3,6 @@ var fs = require('fs');
 require('dotenv').config()
 
 
-console.log(process.env.DB_PUBLIC),
-console.log(process.env.DB_SECRET)
 var public_key = process.env.DB_PUBLIC;
 var secret_key = process.env.DB_SECRET;
 // Setup authentication to api server
@@ -23,22 +21,42 @@ const client = new OBA({
 
 // Example search to the word 'rijk' sorted by title:
 client.get('search', {
-  q: 'Nederlandse wetenschappers in het buitenland',
+  q: 'test',
   sort: 'title',
-  pagesize: 44
+  facet: 'type(book)',
+  refine: true
+  //page: 1
 })
 .then(function(res){
-  // fs.writeFile('myjsonfile.json', res, 'utf8')
+  fs.writeFile('myjsonfile.json', res, 'utf8', function(){})
   const boeken = [];
   JSON.parse(res).aquabrowser.results.result.forEach(function(boek, id) {
-    // console.log(boek.titles.title.$t, id); // TITEL VAN HET BOEK
-    // console.log(boek.authors.author.$t); // AUTEUR VAN HET BOEK
-    // console.log(boek.publication.year.$t); // JAAR VAN PUBLICATIE
-    boeken.push(boek.titles.title.$t, id);
+
+    // boek.titles.title.$t// titel
+    // boek.authors['main-author'].$t // hoofdauteur
+    // boek.authors.author.$t // auteur
+    // boek.languages.language.$t // taal
+    // boek.publication.year.$t // jaartal
+    // boek.summaries.summary.$t // samenvatting
+
+    console.log(id)
+    console.log(typeof boek.publication)
+    var boekInstantie = {
+      id : id,
+      titel : boek.titles.title.$t,
+      taal : (typeof boek.languages === "undefined") ? 'Taal onbekend' : boek.languages.language.$t,
+      jaartal : (typeof boek.publication === "undefined" || typeof boek.publication.year === "undefined") ? 'Jaar onbekend' : boek.publication.year.$t,
+      //jaartal : (boek.publication && boek.publication.year && boek.publication.year.$t) ? 'jaartal' : 'Onbekend'
+      author : (typeof boek.authors === "undefined" || typeof boek.authors['main-author'] === "undefined")  ? "Auteur onbekend" : boek.authors['main-author'].$t
+    }
+    
+    boeken.push(boekInstantie)
+    //boeken.push(["id: " + id, "titel: " + boek.titles.title.$t, "taal: " + boek.languages.language.$t]);
+
     // boeken.map(function (value, index) {
     //   return index;
     // })
   })
-    console.log(boeken)
+  console.log(boeken)
 })
   .catch(err => console.log(err)) // Something went wrong in the request to the API

@@ -27,7 +27,7 @@ with ```http://jsonviewer.stack.hu/``` I was able to see the structure of the da
 
 ## Day 3
 
-Pushing the results to a javascript object using JSON.parse.
+Pushing the results to a javascript object using JSON.parse. The json I receive when doing a request is now a javascript array which is easier to manipulate.
 
 Once all results are in an array I can modify the results and choose to only display parts of it.
 
@@ -48,7 +48,21 @@ Here I can access different fields of the books that my search query returns. A 
     boek.summaries.summary.$t // samenvatting
 ```
 
-Also more experimentation with the search query.
+Next step for me was making a book instance. Instead of putting all the fields in the boeken.push, I'm now creating an object with certain parameters. This also allowed me to easier check whether a field is undefined.
+
+```js
+    var boekInstantie = {
+      id : id,
+      titel : boek.titles.title.$t,
+      taal : (typeof boek.languages === "undefined") ? 'Taal onbekend' : boek.languages.language.$t,
+      jaartal : (typeof boek.publication === "undefined" || typeof boek.publication.year === "undefined") ? 'Jaar onbekend' : boek.publication.year.$t,
+      author : (typeof boek.authors === "undefined" || typeof boek.authors['main-author'] === "undefined")  ? "Auteur onbekend" : boek.authors['main-author'].$t
+    }
+```
+
+This code snippet adds id, title, language, year and author to the boek instance var. Code is added to check whether certain objects exist in the database. If they don't it displays a static message saying the info is missing.
+
+### More experimentation with the search query.
 
 Experimenting with the different parameters. 
 
@@ -74,19 +88,7 @@ Should return only the results of the book type.
 
 *Pagesize doesn't seem to work which for now prevents me from retrieving more than 20 results.*
 
-Next evolution: Ability to check if a field is returned.
-
-```js
-    var boekInstantie = {
-      id : id,
-      titel : boek.titles.title.$t,
-      taal : (typeof boek.languages === "undefined") ? 'Taal onbekend' : boek.languages.language.$t,
-      jaartal : (typeof boek.publication === "undefined" || typeof boek.publication.year === "undefined") ? 'Jaar onbekend' : boek.publication.year.$t,
-      author : (typeof boek.authors === "undefined" || typeof boek.authors['main-author'] === "undefined")  ? "Auteur onbekend" : boek.authors['main-author'].$t
-    }
-```
-
-This code snippet adds id, title, language, year and author to the boek instance var. Code is added to check whether certain objects exist in the database. If they don't it displays a static message saying the info is missing.
+After contacting Mark I found out the pagesize command was disabled due to performance issues. He asked a developer whose advice was just doing several request to retrieve the different pieces.
 
 
 

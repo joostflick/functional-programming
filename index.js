@@ -28,7 +28,7 @@ client.get('search', {
   //page: 1
 })
 .then(function(res){
-  fs.writeFile('myjsonfile.json', res, 'utf8', function(){})
+  //fs.writeFile('myjsonfile.json', res, 'utf8', function(){})
   const boeken = [];
   JSON.parse(res).aquabrowser.results.result.forEach(function(boek, id) {
 

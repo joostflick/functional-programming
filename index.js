@@ -39,14 +39,11 @@ client.get('search', {
     // boek.publication.year.$t // jaartal
     // boek.summaries.summary.$t // samenvatting
 
-    console.log(id)
-    console.log(typeof boek.publication)
     var boekInstantie = {
       id : id,
       titel : boek.titles.title.$t,
       taal : (typeof boek.languages === "undefined") ? 'Taal onbekend' : boek.languages.language.$t,
       jaartal : (typeof boek.publication === "undefined" || typeof boek.publication.year === "undefined") ? 'Jaar onbekend' : boek.publication.year.$t,
-      //jaartal : (boek.publication && boek.publication.year && boek.publication.year.$t) ? 'jaartal' : 'Onbekend'
       author : (typeof boek.authors === "undefined" || typeof boek.authors['main-author'] === "undefined")  ? "Auteur onbekend" : boek.authors['main-author'].$t
     }
     

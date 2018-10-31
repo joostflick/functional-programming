@@ -21,5 +21,5 @@ with ```http://jsonviewer.stack.hu/``` I was able to see the structure of the da
 * Bepaalde onderwerpen die vaker voorkomen, bijv: Meer boeken over programmeren?
 * Komen er steeds minder boeken bij in het assortiment?
 * Correlatie dikte van boeken en het onderwerp (worden woordenboeken dikker of dunner over tijd?)
-* fifth
+* In welke taal zijn boeken het dikst
 

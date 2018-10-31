@@ -15,11 +15,16 @@ to be able to take a better look at the results of my search queries.
 
 with ```http://jsonviewer.stack.hu/``` I was able to see the structure of the datamodel way better. This also helped me defining my possible research subjects
 
+## Day 2
+
 ### 5 possible research cases:
 
 * Meer engelstalige boeken sinds Nederland steeds internationaler is?
-* Bepaalde onderwerpen die vaker voorkomen
-* third
-* fourth
-* fifth
+* Bepaalde onderwerpen die vaker voorkomen, bijv: Meer boeken over programmeren?
+* Komen er steeds minder boeken bij in het assortiment?
+* Correlatie dikte van boeken en het onderwerp (worden woordenboeken dikker of dunner over tijd?)
+* In welke taal zijn boeken het dikst
 
+## Day 3
+
+Pushing the results to a javascript object, then just displaying the titles

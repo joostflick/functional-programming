@@ -13,21 +13,26 @@ const client = new OBA({
 });
 
 const boeken = [];
-// Amount of desired pages (desired results / 20)
-const amountPages = 1;
-var pageIndex = 0;
+
+// Empty promises array
 promises = [];
 
+var amountPages = 5;
 
-for(i=0; i<amountPages; i++){
-  pageIndex++
+var query = 'language:dut';
+
+
+
+for (var i = 0; i < amountPages; i++) getResults((i + 1), query);
+
+function getResults(page, query){
   promises.push(
   client.get('search', {
-    q: 'language:eng',
+    q: query,
     sort: 'title',
     facet: 'type(book)',
     refine: true,
-    page: pageIndex
+    page: page
   })
   .then(function(res){
     JSON.parse(res).aquabrowser.results.result.forEach(function(boek, id) {
@@ -44,7 +49,7 @@ for(i=0; i<amountPages; i++){
       boeken.push(boekInstantie)
     })
   })
-    .catch(err => console.log(err)) // Something went wrong in the request to the API
+    .catch(err => console.log(err))
   )
 }
 
@@ -61,6 +66,8 @@ function dynamicSort(property) {
   }
 }
 
+
+// If all promises are resolved, do this
 Promise.all(promises).then(function(res){
   boeken.sort(dynamicSort("jaartal"));
   fs.writeFile('myjsonfile.json', JSON.stringify(boeken), 'utf8', function(){})

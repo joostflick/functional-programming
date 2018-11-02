@@ -138,7 +138,7 @@ To create a small but sufficient for now dataset I set amountPages to 5. That wa
 
 For this research case I will only be using the results that have either 'dut' or 'eng' as their main language because that is the relationship I'm interested in (percentage Dutch v English books.)
 
-
-
+https://rawgraphs.io/
+https://codeshack.io/json-sorter/
 
 

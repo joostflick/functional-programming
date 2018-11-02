@@ -23,17 +23,20 @@ const boeken = [];
 const amountPages = 5;
 var pageIndex = 0;
 
+
 for(i=0; i<amountPages; i++){
   pageIndex++
   client.get('search', {
-    q: 'test',
+
+    //facet: 'type(book)'
+    q: 'language:eng',
     sort: 'title',
     facet: 'type(book)',
     refine: true,
     page: pageIndex
   })
   .then(function(res){
-    fs.writeFile('myjsonfile.json', res, 'utf8', function(){})
+    //fs.writeFile('myjsonfile.json', res, 'utf8', function(){})
     JSON.parse(res).aquabrowser.results.result.forEach(function(boek, id) {
       
       // boek.id.nativeid //id
@@ -53,7 +56,8 @@ for(i=0; i<amountPages; i++){
         author : (typeof boek.authors === "undefined" || typeof boek.authors['main-author'] === "undefined")  ? "Auteur onbekend" : boek.authors['main-author'].$t
       }
       
-      boeken.push([boekInstantie.id, boekInstantie.jaartal, boekInstantie.taal])
+      boeken.push(boekInstantie)
+      //boeken.push([boekInstantie.id + ', ' + [boekInstantie.jaartal, boekInstantie.taal]])
       //boeken.push(["id: " + id, "titel: " + boek.titles.title.$t, "taal: " + boek.languages.language.$t]);
   
       // boeken.map(function (value, index) {
@@ -66,6 +70,8 @@ for(i=0; i<amountPages; i++){
 
 }
 setTimeout(function(){ 
+  //console.log(boeken)
   console.log(boeken)
+  fs.writeFile('myjsonfile.json', JSON.stringify(boeken), 'utf8', function(){})
   //fs.writeFile('dataset.js', boeken, 'utf8', function(){})
-}, 4000);
+}, 3000);

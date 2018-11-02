@@ -2,24 +2,18 @@ const OBA = require('oba-api');
 var fs = require('fs');
 require('dotenv').config()
 
-
+// Take keys from .env
 var public_key = process.env.DB_PUBLIC;
 var secret_key = process.env.DB_SECRET;
+
 // Setup authentication to api server
 const client = new OBA({
-  // ProQuest API Keys
   public: public_key,
   secret: secret_key
 });
 
-// General usage:
-// client.get({ENDPOINT}, {PARAMS});
-// ENDPOINT = search | details | refine | schema | availability | holdings
-// PARAMS = API url parameter options (see api docs for more info)
-
-// Client returns a promise which resolves the APIs output in JSON
-
 const boeken = [];
+// Amount of desired pages (desired results / 20)
 const amountPages = 10;
 var pageIndex = 0;
 promises = [];
@@ -57,8 +51,3 @@ Promise.all(promises).then(function(res){
   fs.writeFile('myjsonfile.json', JSON.stringify(boeken), 'utf8', function(){})
   console.log(boeken)
 })
-// setTimeout(function(){ 
-//   //console.log(boeken)
-//   fs.writeFile('myjsonfile.json', JSON.stringify(boeken), 'utf8', function(){})
-//   //fs.writeFile('dataset.js', boeken, 'utf8', function(){})
-// }, 5000);

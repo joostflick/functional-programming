@@ -14,7 +14,7 @@ const client = new OBA({
 
 const boeken = [];
 // Amount of desired pages (desired results / 20)
-const amountPages = 10;
+const amountPages = 1;
 var pageIndex = 0;
 promises = [];
 
@@ -47,7 +47,22 @@ for(i=0; i<amountPages; i++){
     .catch(err => console.log(err)) // Something went wrong in the request to the API
   )
 }
+
+// https://stackoverflow.com/questions/1129216/sort-array-of-objects-by-string-property-value
+function dynamicSort(property) {
+  var sortOrder = 1;
+  if(property[0] === "-") {
+      sortOrder = -1;
+      property = property.substr(1);
+  }
+  return function (a,b) {
+      var result = (a[property] < b[property]) ? -1 : (a[property] > b[property]) ? 1 : 0;
+      return result * sortOrder;
+  }
+}
+
 Promise.all(promises).then(function(res){
+  boeken.sort(dynamicSort("jaartal"));
   fs.writeFile('myjsonfile.json', JSON.stringify(boeken), 'utf8', function(){})
   console.log(boeken)
 })

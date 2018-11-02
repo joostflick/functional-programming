@@ -37,7 +37,7 @@ for(i=0; i<amountPages; i++){
         id : parseInt(boek.id.nativeid),
         titel : boek.titles.title.$t,
         taal : (typeof boek.languages === "undefined") ? 'Taal onbekend' : boek.languages.language.$t,
-        jaartal : (typeof boek.publication === "undefined" || typeof boek.publication.year === "undefined") ? 'Jaar onbekend' : boek.publication.year.$t,
+        jaartal : (typeof boek.publication === "undefined" || typeof boek.publication.year === "undefined") ? 'Jaar onbekend' : parseInt(boek.publication.year.$t),
         author : (typeof boek.authors === "undefined" || typeof boek.authors['main-author'] === "undefined")  ? "Auteur onbekend" : boek.authors['main-author'].$t
       }
       

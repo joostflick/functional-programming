@@ -20,15 +20,15 @@ const client = new OBA({
 // Client returns a promise which resolves the APIs output in JSON
 
 const boeken = [];
-const amountPages = 5;
+const amountPages = 10;
 var pageIndex = 0;
+promises = [];
 
 
 for(i=0; i<amountPages; i++){
   pageIndex++
+  promises.push(
   client.get('search', {
-
-    //facet: 'type(book)'
     q: 'language:eng',
     sort: 'title',
     facet: 'type(book)',
@@ -36,20 +36,11 @@ for(i=0; i<amountPages; i++){
     page: pageIndex
   })
   .then(function(res){
-    //fs.writeFile('myjsonfile.json', res, 'utf8', function(){})
     JSON.parse(res).aquabrowser.results.result.forEach(function(boek, id) {
-      
-      // boek.id.nativeid //id
-      // boek.titles.title.$t// titel
-      // boek.authors['main-author'].$t // hoofdauteur
-      // boek.authors.author.$t // auteur
-      // boek.languages.language.$t // taal
-      // boek.publication.year.$t // jaartal
-      // boek.summaries.summary.$t // samenvatting
   
       var boekInstantie = {
-        pageId : id,
-        id : boek.id.nativeid,
+        //pageId : id,
+        id : parseInt(boek.id.nativeid),
         titel : boek.titles.title.$t,
         taal : (typeof boek.languages === "undefined") ? 'Taal onbekend' : boek.languages.language.$t,
         jaartal : (typeof boek.publication === "undefined" || typeof boek.publication.year === "undefined") ? 'Jaar onbekend' : boek.publication.year.$t,
@@ -57,21 +48,17 @@ for(i=0; i<amountPages; i++){
       }
       
       boeken.push(boekInstantie)
-      //boeken.push([boekInstantie.id + ', ' + [boekInstantie.jaartal, boekInstantie.taal]])
-      //boeken.push(["id: " + id, "titel: " + boek.titles.title.$t, "taal: " + boek.languages.language.$t]);
-  
-      // boeken.map(function (value, index) {
-      //   return index;
-      // })
     })
-    //console.log(boeken)
   })
     .catch(err => console.log(err)) // Something went wrong in the request to the API
-
+  )
 }
-setTimeout(function(){ 
-  //console.log(boeken)
-  console.log(boeken)
+Promise.all(promises).then(function(res){
   fs.writeFile('myjsonfile.json', JSON.stringify(boeken), 'utf8', function(){})
-  //fs.writeFile('dataset.js', boeken, 'utf8', function(){})
-}, 3000);
+  console.log(boeken)
+})
+// setTimeout(function(){ 
+//   //console.log(boeken)
+//   fs.writeFile('myjsonfile.json', JSON.stringify(boeken), 'utf8', function(){})
+//   //fs.writeFile('dataset.js', boeken, 'utf8', function(){})
+// }, 5000);

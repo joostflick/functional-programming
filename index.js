@@ -12,14 +12,15 @@ const client = new OBA({
   secret: secret_key
 });
 
-const boeken = [];
+const boeken = []
 
 // Empty promises array
-promises = [];
+promises = []
 
-var amountPages = 4;
+var amountPages = 2
 
-var query = 'language:dut';
+var year = 2018
+var query = 'year:' + year
 
 
 
@@ -55,14 +56,14 @@ function getResults(page, query){
 
 // https://stackoverflow.com/questions/1129216/sort-array-of-objects-by-string-property-value
 function dynamicSort(property) {
-  var sortOrder = 1;
+  var sortOrder = 1
   if(property[0] === "-") {
-      sortOrder = -1;
-      property = property.substr(1);
+      sortOrder = -1
+      property = property.substr(1)
   }
   return function (a,b) {
-      var result = (a[property] < b[property]) ? -1 : (a[property] > b[property]) ? 1 : 0;
-      return result * sortOrder;
+      var result = (a[property] < b[property]) ? -1 : (a[property] > b[property]) ? 1 : 0
+      return result * sortOrder
   }
 }
 
@@ -70,15 +71,20 @@ function dynamicSort(property) {
 // If all promises are resolved, do this
 Promise.all(promises).then(function(res){
   boeken.sort(dynamicSort("jaartal"))
-  fs.writeFile('myjsonfile.json', JSON.stringify(boeken), 'utf8', function(){})
-  console.log(boeken)
-  var count = 0 
-  var year = 1990
+  fs.writeFile('myjsonfile.json', JSON.stringify(boeken, null, '  '), 'utf8', function(){})
+  //console.log(boeken)
+  boekenDut = []
+  boekenEng = []
   var language = 'dut'
   boeken.forEach(function(boek){
-    if(boek.jaartal === year && boek.taal === language){
-      count++;
+    if(boek.jaartal === year && boek.taal === 'dut'){
+      boekenDut.push(boek)
+    } else if(boek.jaartal === year && boek.taal === 'eng'){
+      boekenEng.push(boek)
     }
   })
-  console.log("Aantal boeken uit " + year + " in de taal " + language + ": " + count)
+  //console.log(boekenDut)
+  console.log("Aantal boeken uit " + year + " in de taal Nederlands: " + boekenDut.length)
+  //console.log(boekenEng)
+  console.log("Aantal boeken uit " + year + " in de taal Engels: " + boekenEng.length)
 })

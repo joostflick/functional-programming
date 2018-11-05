@@ -154,13 +154,23 @@ Looking into different types of charts and data visualisation to use.
 
 ### Day 6
 
-Decided on using an proportianal area chart to showcase the difference in english / dutch books over the years.
+#### Possible ways to visualize the difference in Dutch/English books over the years.
+
+##### Proportional area chart
+
+A proportional area chart to showcase the difference in english / dutch books over the years.
 
 https://datavizcatalogue.com/methods/area_chart.html
 
 This type of visualisation shows the difference in amount of books both by size and by displaying the value.
 
 ![Area chart](https://datavizcatalogue.com/methods/images/top_images/area_chart.png "Logo Title Text 1")
+
+##### Grouped bar chart
+
+
+
+
 
 
 

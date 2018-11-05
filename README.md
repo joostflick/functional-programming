@@ -1,6 +1,8 @@
 # OBA API USER
 
-## Day 1
+## Week 2
+
+### Day 1
 Installed Rijks module to make node.js calls to the oba API. 
 ```node
 $ npm install rijkvanzanten/node-oba-api
@@ -15,9 +17,9 @@ to be able to take a better look at the results of my search queries.
 
 with ```http://jsonviewer.stack.hu/``` I was able to see the structure of the datamodel way better. This also helped me defining my possible research subjects
 
-## Day 2
+### Day 2
 
-### 5 possible research cases (in Dutch):
+#### 5 possible research cases (in Dutch):
 
 * Meer engelstalige boeken sinds Nederland steeds internationaler is?
 * Bepaalde onderwerpen die vaker voorkomen, bijv: Meer boeken over programmeren?
@@ -25,7 +27,7 @@ with ```http://jsonviewer.stack.hu/``` I was able to see the structure of the da
 * Correlatie dikte van boeken en het onderwerp (worden woordenboeken dikker of dunner over tijd?)
 * In welke taal zijn boeken het dikst
 
-## Day 3
+### Day 3
 
 Pushing the results to a javascript object using JSON.parse. The json I receive when doing a request is now a javascript array which is easier to manipulate.
 
@@ -62,7 +64,7 @@ Next step for me was making a book instance. Instead of putting all the fields i
 
 This code snippet adds id, title, language, year and author to the boek instance var. Code is added to check whether certain objects exist in the database. If they don't it displays a static message saying the info is missing.
 
-### More experimentation with the search query.
+#### More experimentation with the search query.
 
 Experimenting with the different parameters. 
 
@@ -93,7 +95,7 @@ Should return only the results of the book type.
 
 After contacting Mark I found out the pagesize command was disabled due to performance issues. He asked a developer whose advice was just doing several request to retrieve the different pieces.
 
-## Day 4
+### Day 4
 
 I decided to start using my application to find some more info about my research case. The first research question I will be actively searching data for is: "Over time, has the percentage of English books grown because the people of the Netherlands became more internationally oriented?"
 
@@ -140,5 +142,25 @@ For this research case I will only be using the results that have either 'dut' o
 
 https://rawgraphs.io/
 https://codeshack.io/json-sorter/
+
+### Day 5
+First review of readme, reading general tips on improving read me. Less code, more process.
+
+First info on d3.js and some expirimentation with d3.
+
+Looking into different types of charts and data visualisation to use.
+
+## Week 2
+
+### Day 6
+
+Decided on using an proportianal area chart to showcase the difference in english / dutch books over the years.
+
+https://datavizcatalogue.com/methods/area_chart.html
+
+This type of visualisation shows the difference in amount of books both by size and by displaying the value.
+
+![Area chart](https://datavizcatalogue.com/methods/images/top_images/area_chart.png "Logo Title Text 1")
+
 
 

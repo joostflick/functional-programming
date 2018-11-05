@@ -17,7 +17,7 @@ const boeken = [];
 // Empty promises array
 promises = [];
 
-var amountPages = 5;
+var amountPages = 4;
 
 var query = 'language:dut';
 
@@ -69,7 +69,16 @@ function dynamicSort(property) {
 
 // If all promises are resolved, do this
 Promise.all(promises).then(function(res){
-  boeken.sort(dynamicSort("jaartal"));
+  boeken.sort(dynamicSort("jaartal"))
   fs.writeFile('myjsonfile.json', JSON.stringify(boeken), 'utf8', function(){})
   console.log(boeken)
+  var count = 0 
+  var year = 1990
+  var language = 'dut'
+  boeken.forEach(function(boek){
+    if(boek.jaartal === year && boek.taal === language){
+      count++;
+    }
+  })
+  console.log("Aantal boeken uit " + year + " in de taal " + language + ": " + count)
 })

@@ -8,7 +8,6 @@ For a more code-based approach, and a day by day report, [click here](README-old
 * My research
 * Results
 * Problems
-* Some highlights
 
 ## OBA API
 
@@ -50,7 +49,10 @@ Sub-questions related to this question:
 2. Which queries give an honest Dutch/English representation?
 3. Which values are needed to be able to see a change over the years?
 
-I decided to use the following datavalues per book:
+### Hypothesis
+*Each year the amount of English books as opposed to the amount of Dutch books grows*
+
+I decided to use the following data values per book:
 
 * ID
 * Publishing year
@@ -70,12 +72,12 @@ For now I use multiple queries to request multiple years.
 
 Per year I receive 5 pages of data, so 100 books. 
 
-When (for now manually) inserting those in my d3 visualisation I should already be able to see some sort of change in the amount of English books.
+When inserting those in my d3 visualisation I should already be able to see some sort of change in the amount of English books.
 
 For my first visualization of this data I decided go with a bar chart per year. Later I want this to be a grouped bar chart so you have a clear overview of multiple years like this:
 ![Bar chart](./schets.jpeg)
 
-For now I made a bar chart in d3 that works per year. By making a query to look up 100 books in 2010 and another one to look up 100 books in 2018 I can already make some comparisons.
+For the moment being I made a bar chart in d3 that shows English and Dutch books in percentage by year. By making a query to look up 100 books in 2010 and another one to look up 100 books in 2018 I can already make some comparisons.
 
 Example: 
 ![screenshot 2010](./screenshot2010.png)
@@ -85,19 +87,9 @@ This very primitive comparison is an example of a way to prove my hypothesis. As
 
 As of now though, my sample size is way too small and the results are too inconsistent to draw any legitimate conclusions from these charts.
 
-
-
-
-
-
-
-
-### Hypothesis
-*Each year the amount of English books as opposed to the amount of Dutch books grows*
-
 ## Results
 
-WIP
+When doing several queries and applying them to my simple bar chart, I'm able to see an indication of the amount of English book growing. To get more definitive results I will have to obtain a bigger dataset though.
 
 ## Problems
 
@@ -107,6 +99,4 @@ Here are some of the things that made it harder for me to answer my research que
 * What query to use to have a representative distribution of English and Dutch books
 * The best way to display my results
 
-## Some highlights
 
-WIP

@@ -83,6 +83,8 @@ Example:
 ![screenshot 2010](./screenshot2010.png)
 ![screenshot 2018](./screenshot2018.png)
 
+Visualization currently hosted [here](https://joostflick.github.io/functional-programming/)
+
 This very primitive comparison is an example of a way to prove my hypothesis. As you can see there are relatively more English books in the 2018 chart.
 
 As of now though, my sample size is way too small and the results are too inconsistent to draw any legitimate conclusions from these charts.

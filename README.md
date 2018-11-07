@@ -62,9 +62,9 @@ I wrote a function to determine the percentage of books in each language so I co
 
 ```js
 [ { year: 2015, lang: 'Dutch', value: 63.333333333333336 },
-  { year: 2015 lang: 'English', value: 33.333333333333336 },
-  { year: 2015 lang: 'German', value: 3.333333333333335 },
-  { year: 2015lang: 'Other', value: 0 } ]
+  { year: 2015, lang: 'English', value: 33.333333333333336 },
+  { year: 2015, lang: 'German', value: 3.333333333333335 },
+  { year: 2015, lang: 'Other', value: 0 } ]
 ```
 For now I use multiple queries to request multiple years. 
 

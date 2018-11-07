@@ -4,7 +4,7 @@ data = [ { year: 2018, lang: 'Dutch', value: 63.1578947368421 },
 { year: 2018, lang: 'German', value: 0 },
 { year: 2018, lang: 'Other', value: 0 } ]
 
-data2 = JSON.parse({"url":"https://raw.githubusercontent.com/joostflick/functional-programming/master/docs/percentages.json"})
+//data2 = JSON.parse({"url":"https://raw.githubusercontent.com/joostflick/functional-programming/master/docs/percentages.json"})
 console.log(data)
 
 var year = data[0].year

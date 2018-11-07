@@ -1,27 +1,56 @@
-var svgWidth = 1000;
-var svgHeight = 600;
-var svg = d3.select('svg')
-    .attr("width", svgWidth)
-    .attr("height", svgHeight)
-    .attr("class", "bar-chart");
+// https://blog.risingstack.com/d3-js-tutorial-bar-charts-with-javascript/
+data = [ { year: 2016, lang: 'Dutch', value: 60.60606060606061 },
+{ lang: 'English', value: 36.36363636363637 },
+{ lang: 'German', value: 3.0303030303030303 },
+{ lang: 'Other', value: 0 } ]
 
-    var dataset = [10, 100, 56, 120, 180, 220, 40, 120, 160];
-    var barPadding = 5;
-    var barWidth = (svgWidth / dataset.length);
-    var barChart = svg.selectAll("rect")
-        .data(dataset)
-        .enter()
-        .append("rect")
-        .attr("y", function(d) {
-            return svgHeight - d
-        })
-        .attr("height", function(d) {
-            return d;
-        })
-        .attr("width", barWidth - barPadding)
-        .attr("transform", function (d, i) {
-             var translate = [barWidth * i, 0];
-             return "translate("+ translate +")";
-        });
+var year = data[0].year
 
-console.log('works')
+document.getElementById("heading").innerHTML = "Book % per language in " + year;
+
+
+// SVG Frame
+const margin = 60;
+    const width = 1000 - 2 * margin;
+    const height = 600 - 2 * margin;
+
+    // Select SVG from DOM
+    const svg = d3.select('svg');
+
+    const chart = svg.append('g')
+    .attr('transform', `translate(${margin}, ${margin})`);
+
+    // 
+    const yScale = d3.scaleLinear()
+    .range([height, 0])
+    .domain([0, 100]);
+
+    chart.append('g')
+    .call(d3.axisLeft(yScale));
+
+    const xScale = d3.scaleBand()
+    .range([0, width])
+    .domain(data.map((s) => s.lang))
+    .padding(0.2)
+
+    chart.append('g')
+    .attr('transform', `translate(0, ${height})`)
+    .call(d3.axisBottom(xScale));
+
+    chart.selectAll()
+    .data(data)
+    .enter()
+    .append('rect')
+    .attr('x', (a) => xScale(a.lang) + (xScale.bandwidth() - xScale.bandwidth()) / 2)
+    .attr('y', (s) => yScale(s.value))
+    .attr('height', (s) => height - yScale(s.value))
+    .attr('width', xScale.bandwidth())
+
+
+    //grid horizontal
+    chart.append('g')
+    .attr('class', 'grid')
+    .call(d3.axisLeft()
+        .scale(yScale)
+        .tickSize(-width, 0, 0)
+        .tickFormat(''))

@@ -60,7 +60,7 @@ With these I filled a dataset with books from a certain year. This way I was abl
 
 I wrote a function to determine the percentage of books in each language so I could make a graph. This means that whenever I run it I receive the following data:
 
-```json
+```js
 [ { year: 2015, lang: 'Dutch', value: 63.333333333333336 },
   { year: 2015 lang: 'English', value: 33.333333333333336 },
   { year: 2015 lang: 'German', value: 3.333333333333335 },

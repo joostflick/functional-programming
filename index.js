@@ -6,31 +6,36 @@ require('dotenv').config()
 var public_key = process.env.DB_PUBLIC;
 var secret_key = process.env.DB_SECRET;
 
-// Setup authentication to api server
+// Set up authentication to api server
 const client = new OBA({
   public: public_key,
   secret: secret_key
 });
 
+// Empty array for the results
 const boeken = []
 
 // Empty promises array
 promises = []
 
-var amountPages = 2
+// Bepaal het aantal pagina's
+var amountPages = 4
 
-var year = 2018
-var query = 'year:' + year
+// Bepaal het jaar
+var year = 2016
 
+// De query
+var query = 'year:' + year + ' muziek'
 
-
+// Get results voor elke page
 for (var i = 0; i < amountPages; i++) getResults((i + 1), query);
 
+// Get results functie, met parameters voor welke pagina en query
 function getResults(page, query){
   promises.push(
   client.get('search', {
     q: query,
-    sort: 'title',
+    //sort: 'title',
     facet: 'type(book)',
     refine: true,
     page: page
@@ -54,6 +59,7 @@ function getResults(page, query){
   )
 }
 
+// order the data by a certain property
 // https://stackoverflow.com/questions/1129216/sort-array-of-objects-by-string-property-value
 function dynamicSort(property) {
   var sortOrder = 1
@@ -67,16 +73,36 @@ function dynamicSort(property) {
   }
 }
 
+//Remove duplicates which occur because the oba API loops through pages when you request non existant pages
+//This removes duplicates based on a certain property
+//https://stackoverflow.com/questions/2218999/remove-duplicates-from-an-array-of-objects-in-javascript
+function removeDuplicate(originalArray, prop) {
+  var newArray = [];
+  var lookupObject  = {};
+
+  for(var i in originalArray) {
+     lookupObject[originalArray[i][prop]] = originalArray[i];
+  }
+
+  for(i in lookupObject) {
+      newArray.push(lookupObject[i]);
+  }
+   return newArray;
+}
 
 // If all promises are resolved, do this
 Promise.all(promises).then(function(res){
-  boeken.sort(dynamicSort("jaartal"))
-  fs.writeFile('myjsonfile.json', JSON.stringify(boeken, null, '  '), 'utf8', function(){})
+  //console.log(boeken)
+
+  // Remove duplicates and sort by year
+  var cleanedBoeken = removeDuplicate(boeken.sort(dynamicSort("jaartal")), "id");
+  console.log(cleanedBoeken)
+  //boeken.sort(dynamicSort("jaartal"))
+  fs.writeFile('myjsonfile.json', JSON.stringify(cleanedBoeken, null, '  '), 'utf8', function(){})
   //console.log(boeken)
   boekenDut = []
   boekenEng = []
-  var language = 'dut'
-  boeken.forEach(function(boek){
+  cleanedBoeken.forEach(function(boek){
     if(boek.jaartal === year && boek.taal === 'dut'){
       boekenDut.push(boek)
     } else if(boek.jaartal === year && boek.taal === 'eng'){
@@ -87,4 +113,5 @@ Promise.all(promises).then(function(res){
   console.log("Aantal boeken uit " + year + " in de taal Nederlands: " + boekenDut.length)
   //console.log(boekenEng)
   console.log("Aantal boeken uit " + year + " in de taal Engels: " + boekenEng.length)
+  console.log(cleanedBoeken.length)
 })

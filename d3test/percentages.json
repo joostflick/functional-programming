@@ -1,18 +1,21 @@
 [
   {
-    "year": 2016,
+    "year": 2018,
     "lang": "Dutch",
-    "value": 60.60606060606061
+    "value": 63.1578947368421
   },
   {
+    "year": 2018,
     "lang": "English",
-    "value": 36.36363636363637
+    "value": 36.8421052631579
   },
   {
+    "year": 2018,
     "lang": "German",
-    "value": 3.0303030303030303
+    "value": 0
   },
   {
+    "year": 2018,
     "lang": "Other",
     "value": 0
   }

@@ -1,9 +1,8 @@
 // https://blog.risingstack.com/d3-js-tutorial-bar-charts-with-javascript/
-data = [ { year: 2016, lang: 'Dutch', value: 60.60606060606061 },
-{ lang: 'English', value: 36.36363636363637 },
-{ lang: 'German', value: 3.0303030303030303 },
-{ lang: 'Other', value: 0 } ]
-
+data = [ { year: 2018, lang: 'Dutch', value: 63.1578947368421 },
+{ year: 2018, lang: 'English', value: 36.8421052631579 },
+{ year: 2018, lang: 'German', value: 0 },
+{ year: 2018, lang: 'Other', value: 0 } ]
 var year = data[0].year
 
 document.getElementById("heading").innerHTML = "Book % per language in " + year;
@@ -54,3 +53,4 @@ const margin = 60;
         .scale(yScale)
         .tickSize(-width, 0, 0)
         .tickFormat(''))
+

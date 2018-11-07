@@ -21,10 +21,10 @@ const percentageArray = []
 promises = []
 
 // Select amount of pages
-var amountPages = 8
+var amountPages = 5
 
 // Which year
-var year = 2016
+var year = 2018
 
 // Search query
 var query = 'year:' + year + ' test'
@@ -137,7 +137,7 @@ Promise.all(promises).then(function (res) {
 
 
   var percentages = calculatePercentage(boekenDut.length, boekenEng.length, boekenGer.length, boekenOther);
-  percentageArray.push({ year: year, lang: 'Dutch', value: percentages[0] }, { lang: 'English', value: percentages[1] }, { lang: 'German', value: percentages[2] }, { lang: 'Other', value: percentages[3] })
+  percentageArray.push({ year: year, lang: 'Dutch', value: percentages[0] }, { year: year, lang: 'English', value: percentages[1] }, { year: year, lang: 'German', value: percentages[2] }, { year: year, lang: 'Other', value: percentages[3] })
   console.log(percentageArray)
   fs.writeFile('d3test/percentages.json', JSON.stringify(percentageArray, null, '  '), 'utf8', function () { })
 

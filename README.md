@@ -47,6 +47,49 @@ After researching the different datasets I could obtain using the API I decided 
 Sub-questions related to this question:
 
 1. For each year, what is the proportion of the English books as opposed to the Dutch books?
+2. Which queries give an honest Dutch/English representation?
+3. Which values are needed to be able to see a change over the years?
+
+I decided to use the following datavalues per book:
+
+* ID
+* Publishing year
+* Language
+
+With these I filled a dataset with books from a certain year. This way I was able to see the distribution of Dutch/English books per year.
+
+I wrote a function to determine the percentage of books in each language so I could make a graph. This means that whenever I run it I receive the following data:
+
+```json
+[ { year: 2015, lang: 'Dutch', value: 63.333333333333336 },
+  { year: 2015 lang: 'English', value: 33.333333333333336 },
+  { year: 2015 lang: 'German', value: 3.333333333333335 },
+  { year: 2015lang: 'Other', value: 0 } ]
+```
+For now I use multiple queries to request multiple years. 
+
+Per year I receive 5 pages of data, so 100 books. 
+
+When (for now manually) inserting those in my d3 visualisation I should already be able to see some sort of change in the amount of English books.
+
+For my first visualization of this data I decided go with a bar chart per year. Later I want this to be a grouped bar chart so you have a clear overview of multiple years like this:
+![Bar chart](./schets.jpeg)
+
+For now I made a bar chart in d3 that works per year. By making a query to look up 100 books in 2010 and another one to look up 100 books in 2018 I can already make some comparisons.
+
+Example: 
+![screenshot 2010](./screenshot2010.png)
+![screenshot 2018](./screenshot2018.png)
+
+This very primitive comparison is an example of a way to prove my hypothesis. As you can see there are relatively more English books in the 2018 chart.
+
+As of now though, my sample size is way too small and the results are too inconsistent to draw any legitimate conclusions from these charts.
+
+
+
+
+
+
 
 
 ### Hypothesis

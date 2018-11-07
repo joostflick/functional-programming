@@ -1,10 +1,10 @@
 // https://blog.risingstack.com/d3-js-tutorial-bar-charts-with-javascript/
-data2 = [ { year: 2018, lang: 'Dutch', value: 63.1578947368421 },
+data = [ { year: 2018, lang: 'Dutch', value: 63.1578947368421 },
 { year: 2018, lang: 'English', value: 36.8421052631579 },
 { year: 2018, lang: 'German', value: 0 },
 { year: 2018, lang: 'Other', value: 0 } ]
 
-data = JSON.parse({"url":"https://raw.githubusercontent.com/joostflick/functional-programming/master/docs/percentages.json"})
+data2 = JSON.parse({"url":"https://raw.githubusercontent.com/joostflick/functional-programming/master/docs/percentages.json"})
 console.log(data)
 
 var year = data[0].year

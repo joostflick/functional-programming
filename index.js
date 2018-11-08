@@ -110,6 +110,7 @@ Promise.all(promises).then(function (res) {
     languages.push(boek.taal)
   })
 
+  // Code below needs to be updated to be dynamic
   boekenDut = []
   boekenEng = []
   boekenGer = []

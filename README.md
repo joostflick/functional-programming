@@ -8,6 +8,7 @@ For a more code-based approach, and a day by day report, [click here](README-old
 * My research
 * Results
 * Problems
+* TO DO
 
 ## OBA API
 
@@ -101,4 +102,8 @@ Here are some of the things that made it harder for me to answer my research que
 * What query to use to have a representative distribution of English and Dutch books
 * The best way to display my results
 
+## TO DO (no particular order)
 
+- [ ] Make function to count languages and amount of books of that language dynamic instead of hardcoded
+- [ ] Send the data of a get request directly to my visualization (or even better: select a year in the dropdown on which the app does a request to retrieve the data for the graph)
+- [ ]  Rctx implementation for more requests (and less server load)

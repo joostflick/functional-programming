@@ -92,7 +92,7 @@ As of now though, my sample size is way too small and the results are too incons
 
 ## Results
 
-When doing several queries and applying them to my simple bar chart, I'm able to see an indication of the amount of English book growing. To get more definitive results I will have to obtain a bigger dataset though.
+When doing several queries and applying them to my simple bar chart, I'm able to see an indication of the amount of English book growing. To get more definitive results I will have to obtain a bigger dataset. Furthermore I am still debating the best queries to use if I won't be able to retrieve ALL books. 
 
 ## Problems
 
@@ -101,6 +101,7 @@ Here are some of the things that made it harder for me to answer my research que
 * Uncertainty about the amount of books needed to get significant results
 * What query to use to have a representative distribution of English and Dutch books
 * The best way to display my results
+* CORS implementation (and deciding where I wanted to host my graph)
 
 ## TO DO (no particular order)
 

@@ -4,11 +4,17 @@
   "description": "Tool to search the OBA API",
   "main": "index.js",
   "dependencies": {
+    "browserify": "^16.2.3",
+    "cors": "^2.8.5",
     "dotenv": "^6.1.0",
+    "express": "^4.16.4",
     "oba-api": "^1.0.0"
   },
   "devDependencies": {},
   "scripts": {
+    "data": "node index.js",
+    "start": "npm run data && npm run build",
+    "build": "browserify docs/index.js > docs/bundle.js"
   },
   "keywords": [
     "search",

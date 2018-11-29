@@ -1,3 +1,4 @@
+(function(){function r(e,n,t){function o(i,f){if(!n[i]){if(!e[i]){var c="function"==typeof require&&require;if(!f&&c)return c(i,!0);if(u)return u(i,!0);var a=new Error("Cannot find module '"+i+"'");throw a.code="MODULE_NOT_FOUND",a}var p=n[i]={exports:{}};e[i][0].call(p.exports,function(r){var n=e[i][1][r];return o(n||r)},p,p.exports,r,e,n,t)}return n[i].exports}for(var u="function"==typeof require&&require,i=0;i<t.length;i++)o(t[i]);return o}return r})()({1:[function(require,module,exports){
 // https://blog.risingstack.com/d3-js-tutorial-bar-charts-with-javascript/
 var data = require('./percentages.json')
 //data2 = JSON.parse({"url":"https://raw.githubusercontent.com/joostflick/functional-programming/master/docs/percentages.json"})
@@ -62,3 +63,28 @@ chart
       .tickSize(-width, 0, 0)
       .tickFormat('')
   )
+
+},{"./percentages.json":2}],2:[function(require,module,exports){
+module.exports=[
+  {
+    "year": 2000,
+    "lang": "Dutch",
+    "value": 70
+  },
+  {
+    "year": 2000,
+    "lang": "English",
+    "value": 30
+  },
+  {
+    "year": 2000,
+    "lang": "German",
+    "value": 0
+  },
+  {
+    "year": 2000,
+    "lang": "Other",
+    "value": 0
+  }
+]
+},{}]},{},[1]);

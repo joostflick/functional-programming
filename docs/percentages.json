@@ -1,801 +1,800 @@
 [
   {
-    "id": 87681,
-    "query": "website",
+    "id": 1714,
+    "query": "test",
+    "titel": "Autotest",
     "taal": "dut",
-    "jaartal": 2005,
-    "author": "Fouchier, Francisca J.C."
+    "jaartal": 1973,
+    "author": "Auteur onbekend"
   },
   {
-    "id": 188165,
-    "query": "website",
-    "titel": "Song sheets to software : a guide to print music, software, and web sites for musicians / Elizabeth C. Axford",
-    "taal": "eng",
-    "jaartal": 2004,
-    "author": "Axford, Elizabeth C."
-  },
-  {
-    "id": 262369,
-    "query": "website",
-    "titel": "Internet, pardon? : Mailen, chatten, websites / Marco Smeets",
+    "id": 42568,
+    "query": "test",
+    "titel": "Op de proef gesteld : geschiedenis van de psychologische test : tentoonstellingsbrochure / [teksten:  Peter van Drunen en Pieter J. van Strien]",
     "taal": "dut",
-    "jaartal": 1999,
-    "author": "Smeets, Marco"
+    "jaartal": 1991,
+    "author": "van Drunen, Peter"
   },
   {
-    "id": 316698,
-    "query": "website",
-    "titel": "Websites maken met WEB! Pro / [Addo Stuur ; met medew. van Alex Wit]",
+    "id": 42621,
+    "query": "test",
+    "titel": "Tussen traditie en vernieuwing : zestig jaar SON-tests / Peter van Drunen",
     "taal": "dut",
     "jaartal": 2003,
-    "author": "Stuur, Addo"
+    "author": "van Drunen, Peter"
   },
   {
-    "id": 335387,
-    "query": "website",
-    "titel": "Websites maken voor senioren / Jeroen Teelen ; [met medew. van: Elly Stouten]",
+    "id": 45372,
+    "query": "test",
+    "titel": "Test je wijnkennis met Hubrecht Duijker : voor iedere wijnliefhebber om spelenderwijs thuis te raken in de wereld van de wijn / [idee & tekst: Hubrecht Duijker ; eindred.: Inmerc]",
     "taal": "dut",
-    "jaartal": 2005,
-    "author": "Teelen, Jeroen"
+    "jaartal": 2002,
+    "author": "Duijker, Hubrecht"
   },
   {
-    "id": 596284,
-    "query": "website",
-    "titel": "Web design: portfolios / ed. Julius Wiedemann",
+    "id": 69698,
+    "query": "test",
+    "titel": "Markant Nederland : test je toeristische kennis",
+    "taal": "dut",
+    "jaartal": 1998,
+    "author": "Auteur onbekend"
+  },
+  {
+    "id": 86809,
+    "query": "test",
+    "titel": "The application of the Rorschach test to young children / by Mary Ford",
+    "taal": "Taal onbekend",
+    "jaartal": 1946,
+    "author": "Ford, Mary"
+  },
+  {
+    "id": 112549,
+    "query": "test",
+    "taal": "dut",
+    "jaartal": 2002,
+    "author": "Gijsen, William"
+  },
+  {
+    "id": 120875,
+    "query": "test",
+    "titel": "Test en train uzelf / V. Golenitsjev ; [vert. uit het Russisch: Alexander Münninghoff]",
+    "taal": "dut",
+    "jaartal": 1975,
+    "author": "Goleniscev, V.E."
+  },
+  {
+    "id": 125741,
+    "query": "test",
+    "titel": "Test uw gezondheid / Jannes van Everdingen ... [et al. ; verder werkten mee W. Bergman ... et al. ; eindred. Van den Hoven Bureauredactie ; foto's Consumentenbond, Irene Kievits]",
+    "taal": "dut",
+    "jaartal": 2003,
+    "author": "J.J.E. van Everdingen"
+  },
+  {
+    "id": 145389,
+    "query": "test",
+    "titel": "Een kom water, een test vuur / Hella S. Haasse",
+    "taal": "dut",
+    "jaartal": 1959,
+    "author": "Haasse, Hella S."
+  },
+  {
+    "id": 156544,
+    "query": "test",
+    "titel": "The love test / Hugo Hamilton",
     "taal": "eng",
-    "jaartal": 2005,
-    "author": "Julius Wiedemann"
+    "jaartal": 1995,
+    "author": "Hamilton, Hugo"
   },
   {
-    "id": 596800,
-    "query": "website",
-    "titel": "Welgespeld : werkwoordspelling voor hoger onderwijs / Wilma van der Westen",
+    "id": 184502,
+    "query": "test",
+    "titel": "Drie drama's / Willem Frederik Hermans",
     "taal": "dut",
-    "jaartal": 2005,
-    "author": "van der Westen, Wilma"
+    "jaartal": 1962,
+    "author": "Hermans, Willem Frederik"
   },
   {
-    "id": 597301,
-    "query": "website",
-    "titel": "Encyclopedie van de aarde / Matt Turner",
+    "id": 192166,
+    "query": "test",
+    "titel": "Test je kennis over de wereld : leuke spelen waarvan je ook wat leert / tekst van G.R. van Hierden-Tuinman en J. van Gelder ; met quizvragen van Erik Van den Heuvel",
     "taal": "dut",
-    "jaartal": 2005,
-    "author": "Turner, Matt"
+    "jaartal": 1982,
+    "author": "van Hierden-Tuinman, R."
   },
   {
-    "id": 597357,
-    "query": "website",
-    "titel": "Encyclopedie van mummies / Peter Chrisp",
+    "id": 202167,
+    "query": "test",
+    "titel": "Jef Farèl in actie / tekst: G.H. van Maren ; tek.: Ben Horsthuis",
+    "taal": "dut",
+    "jaartal": 1996,
+    "author": "Horsthuis, Ben"
+  },
+  {
+    "id": 204948,
+    "query": "test",
+    "titel": "Wat is uw keus? : 22 auto's getest en beschreven / door J.B.Th. Hugenholtz",
+    "taal": "dut",
+    "jaartal": 1968,
+    "author": "Hugenholtz, J.B.Th."
+  },
+  {
+    "id": 208308,
+    "query": "test",
+    "titel": "Test het I.Q. van uw kat : hoe intelligent is uw poes of kater? / E.M. Bard ; met tek. van Robert Leydenfrost ; [vert. uit het Engels: Thecla Nieweg]",
+    "taal": "dut",
+    "jaartal": 1991,
+    "author": "Bard, E.M."
+  },
+  {
+    "id": 227995,
+    "query": "test",
+    "titel": "Diagnostiek bij allochtonen : mogelijkheden en beperkingen van psychologische tests / Nico Bleichrodt, Fons J.R. van de Vijver (red.)",
+    "taal": "dut",
+    "jaartal": 2001,
+    "author": "Nico Bleichrodt"
+  },
+  {
+    "id": 264632,
+    "query": "test",
+    "titel": "Vingeroefeningen voor de psychologische test : testvoorbeelden en aanwijzingen voor sollicitanten en liefhebbers / Frank Brenner, Doris Dilger ; [vert. uit het Duits door Rien Pico]",
+    "taal": "dut",
+    "jaartal": 1985,
+    "author": "Brenner, Frank"
+  },
+  {
+    "id": 266822,
+    "query": "test",
+    "titel": "Test zelf uw rekenkunst / Edward H. Julius ; [vert. uit het Engels door: E.J. van Kervel]",
+    "taal": "Taal onbekend",
+    "jaartal": 1993,
+    "author": "Julius, Edward H."
+  },
+  {
+    "id": 271384,
+    "query": "test",
+    "titel": "Kleur in de klas : 101 kernpunten van intercultureel onderwijs : met de test Hoe allochtoon-vriendelijk ben ik eigenlijk? / Hans Kaldenbach ; [ill. Anone ... et al.]",
+    "taal": "dut",
+    "jaartal": 1998,
+    "author": "Kaldenbach, Hans"
+  },
+  {
+    "id": 279175,
+    "query": "test",
+    "titel": "The test of time / by Garry Kasparov ; transl. [from the Russian] by K.P. Neat",
+    "taal": "eng",
+    "jaartal": 1986,
+    "author": "Kasparov, Garri"
+  },
+  {
+    "id": 297201,
+    "query": "test",
+    "titel": "Test en verbeter uw vaardigheden als manager / Vikky Burt ; [vert. uit het Engels: Katrien Bruyland]",
+    "taal": "dut",
+    "jaartal": 2001,
+    "author": "Burt, Vikky"
+  },
+  {
+    "id": 311037,
+    "query": "test",
+    "titel": "Harde noten : test uw klassieke muziekkennis / [Victor Striker ; red.: De Taallijn]",
+    "taal": "dut",
+    "jaartal": 2000,
+    "author": "Striker, Victor"
+  },
+  {
+    "id": 329000,
+    "query": "test",
+    "titel": "Tests in de psychologische practijk : een inleiding in de psychodiagnostiek / door B.J. Kouwer",
+    "taal": "dut",
+    "jaartal": 1957,
+    "author": "Kouwer, B.J."
+  },
+  {
+    "id": 331266,
+    "query": "test",
+    "titel": "Handboek psychodiagnostiek en verstandelijke beperking : classificatie, test- en schaalgebruik / D.W. Kraijer, J.J. Plas ; [ill.: Juul Kraijer]",
+    "taal": "dut",
+    "jaartal": 2002,
+    "author": "Kraijer, D.W."
+  },
+  {
+    "id": 372537,
+    "query": "test",
+    "titel": "Test uw talenten / Peter Lauster ; [vert. uit het Duits door Parma van Loon ; ill.: Kurt Heger]",
+    "taal": "dut",
+    "jaartal": 1991,
+    "author": "Lauster, Peter"
+  },
+  {
+    "id": 395836,
+    "query": "test",
+    "titel": "Test your EQ / Mark Davis",
+    "taal": "eng",
+    "jaartal": 2004,
+    "author": "Davis, Mark"
+  },
+  {
+    "id": 420991,
+    "query": "test",
+    "titel": "psychologische test voor onderwijs en maatschappij / J. Luning Prak",
+    "taal": "dut",
+    "jaartal": 1976,
+    "author": "Prak, Jacob Luning"
+  },
+  {
+    "id": 421163,
+    "query": "test",
+    "titel": "De waarde van de psychologische test / J. Luning Prak",
+    "taal": "dut",
+    "jaartal": 1964,
+    "author": "Prak, Jacob Luning"
+  },
+  {
+    "id": 434733,
+    "query": "test",
+    "titel": "Testwijzer : het gebruik van psychologische tests bij personeelsselectie / Paul van der Maesen de Sombreff",
+    "taal": "dut",
+    "jaartal": 1990,
+    "author": "van der Maesen de Sombreff, Paul"
+  },
+  {
+    "id": 471413,
+    "query": "test",
+    "taal": "dut",
+    "jaartal": 1980,
+    "author": "Mesker, P."
+  },
+  {
+    "id": 488932,
+    "query": "test",
+    "titel": "Test en verbeter uw managementstijl / John Wilson ; [vert. uit het Engels: Katrien Bruyland]",
+    "taal": "dut",
+    "jaartal": 2001,
+    "author": "Wilson, John"
+  },
+  {
+    "id": 500547,
+    "query": "test",
+    "titel": "The electric kool-aid acid test / Tom Wolfe",
+    "taal": "eng",
+    "jaartal": 1990,
+    "author": "Wolfe, Tom"
+  },
+  {
+    "id": 512931,
+    "query": "test",
+    "titel": "Test en verbeter uw leidinggevende capaciteiten / Brian O'Neill ; [vert. uit het Engels: Moniek Braeckman]",
+    "taal": "dut",
+    "jaartal": 2001,
+    "author": "O'Neill, Brian"
+  },
+  {
+    "id": 546869,
+    "query": "test",
+    "titel": "Genees je allergie in een handomdraai : test en therapie met drukpuntmassage / Jimmy Scott ; [ill. Claudia Wagar ; vert. uit het Engels door Margot Bakker]",
+    "taal": "dut",
+    "jaartal": 1989,
+    "author": "SCOTT, JIMMY"
+  },
+  {
+    "id": 555566,
+    "query": "test",
+    "titel": "The Times IQ-test : 400 nieuwe oefeningen voor de praktijk / Ken Russell en Philip Carter ; [vert. uit het Engels: Joost Zwart]",
+    "taal": "dut",
+    "jaartal": 2002,
+    "author": "Russell, Ken"
+  },
+  {
+    "id": 590086,
+    "query": "test",
+    "titel": "Test your English vocabulary in use : pre-intermediate & intermediate / Stuart Redman & Ruth Gairns",
+    "taal": "eng",
+    "jaartal": 2003,
+    "author": "Redman, Stuart"
+  },
+  {
+    "id": 632528,
+    "query": "test",
+    "titel": "Chill : toptips voor relaxte meiden : test jezelf, maak lekkere snacks en doe iets creatiefs / Leanne Warrick",
     "taal": "dut",
     "jaartal": 2006,
-    "author": "Chrisp, Peter"
+    "author": "Warrick, Leanne"
   },
   {
-    "id": 597545,
-    "query": "website",
-    "titel": "Encyclopedie van ruimtevaart / Ian Graham",
-    "taal": "dut",
-    "jaartal": 2005,
-    "author": "Graham, Ian"
-  },
-  {
-    "id": 603222,
-    "query": "website",
-    "titel": "Maak je eigen website met FrontPage / Karin Princen",
-    "taal": "dut",
-    "jaartal": 2006,
-    "author": "Princen, Karin"
-  },
-  {
-    "id": 610434,
-    "query": "website",
-    "titel": "Websites maken / Martijn Vet",
-    "taal": "dut",
-    "jaartal": 2006,
-    "author": "Vet, Martijn"
-  },
-  {
-    "id": 623453,
-    "query": "website",
-    "titel": "Encyclopedie van het menselijk lichaam / Richard Walker",
-    "taal": "dut",
-    "jaartal": 2006,
-    "author": "Walker, Richard"
-  },
-  {
-    "id": 623460,
-    "query": "website",
-    "titel": "Encyclopedie van insecten / David Burnie",
-    "taal": "dut",
-    "jaartal": 2006,
-    "author": "Burnie, David"
-  },
-  {
-    "id": 623461,
-    "query": "website",
-    "titel": "Encyclopedie van zoogdieren / Jen Green en David Burnie",
-    "taal": "dut",
-    "jaartal": 2006,
-    "author": "Green, Jen"
-  },
-  {
-    "id": 623462,
-    "query": "website",
-    "titel": "Encyclopedie van bodemschatten / John Farndon",
-    "taal": "dut",
-    "jaartal": 2006,
-    "author": "Farndon, John"
-  },
-  {
-    "id": 660550,
-    "query": "website",
-    "titel": "Het beste van CSS : indrukwekkende websites vormgeven met Cascading Style Sheets / Ward van der Put",
-    "taal": "dut",
-    "jaartal": 2007,
-    "author": "van der Put, Ward"
-  },
-  {
-    "id": 790545,
-    "query": "website",
-    "titel": "Encyclopedie van De oude Grieken / Peter Chrisp",
-    "taal": "dut",
-    "jaartal": 2007,
-    "author": "Chrisp, Peter"
-  },
-  {
-    "id": 791384,
-    "query": "website",
-    "titel": "Encyclopedie van planten / David Burnie",
-    "taal": "dut",
-    "jaartal": 2007,
-    "author": "Burnie, David"
-  },
-  {
-    "id": 796502,
-    "query": "website",
-    "titel": "Encyclopedie van het weer / John Woodward",
-    "taal": "dut",
-    "jaartal": 2007,
-    "author": "Woodward, John"
-  },
-  {
-    "id": 796568,
-    "query": "website",
-    "titel": "Encyclopedie van het oude Rome / Peter Chrisp",
-    "taal": "dut",
-    "jaartal": 2007,
-    "author": "Chrisp, Peter"
-  },
-  {
-    "id": 797291,
-    "query": "website",
-    "titel": "Crash course in Web design for libraries / Charles Rubenstein",
+    "id": 636174,
+    "query": "test",
+    "titel": "Test your IQ : 400 questions to boost your brainpower/ Philip Carter & Ken Russell",
     "taal": "eng",
     "jaartal": 2007,
-    "author": "Rubenstein, Charles P."
+    "author": "Carter, Philip"
   },
   {
-    "id": 809104,
-    "query": "website",
-    "titel": "Websites maken voor dummies / Janine Warner",
+    "id": 639008,
+    "query": "test",
+    "titel": "Trainingsprogramma voor de psychologische test : aanwijzingen, voorbeelden en oplossingen voor een succesvolle test / Paul Pelshenke",
     "taal": "dut",
-    "jaartal": 2008,
-    "author": "Warner, Janine"
+    "jaartal": 2006,
+    "author": "Pelshenke, Paul"
   },
   {
-    "id": 872651,
-    "query": "website",
-    "titel": "Webanalytics voor dummies / Pedro Sostre, Jennifer LeClaire",
+    "id": 640774,
+    "query": "test",
+    "titel": "Testtheorie : inleiding in de theorie van de psychologische test en zijn toepassingen / P.J.D. Drenth, K. Sijtsma",
     "taal": "dut",
-    "jaartal": 2008,
-    "author": "Sostre, Pedro"
+    "jaartal": 2006,
+    "author": "Drenth, P.J.D."
   },
   {
-    "id": 893066,
-    "query": "website",
-    "titel": "Adobe Dreamweaver CS4 inititatie : ontwerpen van websites met XHTML, CSS en spry / Patrick Verhaert",
+    "id": 642576,
+    "query": "test",
+    "titel": "Alles over management tests / Jack J.R. van Minden",
     "taal": "dut",
-    "jaartal": 2008,
-    "author": "Verhaert, Patrick"
+    "jaartal": 2006,
+    "author": "van Minden, Jack J.R."
   },
   {
-    "id": 896311,
-    "query": "website",
-    "titel": "Websites maken voor dummies / David Crowder",
+    "id": 656337,
+    "query": "test",
+    "titel": "Houden van is niet genoeg : test, begrijp en verbeter je relatie / Jan Verhulst",
     "taal": "dut",
-    "jaartal": 2009,
-    "author": "Crowder, David"
+    "jaartal": 2007,
+    "author": "Verhulst, Jan"
   },
   {
-    "id": 896312,
-    "query": "website",
-    "titel": "Klantgerichte websites / Peter Beekman ... [et al.]",
+    "id": 665622,
+    "query": "test",
+    "titel": "Practice exercises for the TOEFL : test of English as a foreign language / Pamela J. Sharpe",
+    "taal": "eng",
+    "jaartal": 2003,
+    "author": "Sharpe, Pamela J."
+  },
+  {
+    "id": 681819,
+    "query": "test",
+    "titel": "Die Homosexualität des Mannes im Szondi-Test : ein Beitrag zur Erforschung der Homosexualität und zur Kritik der Szondi-Methode / von Carl Laszlo",
+    "taal": "ger",
+    "jaartal": 1956,
+    "author": "Laszlo, Carl"
+  },
+  {
+    "id": 684350,
+    "query": "test",
+    "titel": "De aids-test : wel of niet doen?",
     "taal": "dut",
-    "jaartal": 2008,
-    "author": "Peter Beekman"
+    "jaartal": 1991,
+    "author": "Auteur onbekend"
   },
   {
-    "id": 897816,
-    "query": "website",
-    "titel": "Webredactie / Gabor Mooij",
+    "id": 685014,
+    "query": "test",
+    "titel": "Juridische en ethische dilemma's bij HIV-prevalentie_onderzoek : inleiding voor de Nationale commissie AIDS-bestrijding , symposium Toepassing van de test, 1 december 1988 / W. van der Burg, A.H. Vedder, A.K. Huibers",
     "taal": "dut",
-    "jaartal": 2008,
-    "author": "Mooij, Gabor"
+    "jaartal": 1988,
+    "author": "van der Burg, W."
   },
   {
-    "id": 899135,
-    "query": "website",
-    "titel": "Een website die werkt : overzichtelijk, vindbaar en klantgericht / Gerry McGovern",
+    "id": 685123,
+    "query": "test",
+    "titel": "Le labyrinthe sida : quelques impacts sociaux du sida en Suisse : test des anticorps anti-hiv, assurance maladie, emploi, caisses de pension / Roger Charbonney",
+    "taal": "fre",
+    "jaartal": 1988,
+    "author": "Charbonney, Roger"
+  },
+  {
+    "id": 686448,
+    "query": "test",
+    "titel": "Gefeliciteerd mevrouw, de test wijst uit dat u 100% lesbies bent : een onderzoek naar hulpverleningservaringen van lesbiese vrouwen / [door] Ineke Hengeveld, Obertha Holwerda en Marianne Hoogma",
     "taal": "dut",
-    "jaartal": 2009,
-    "author": "McGovern, Gerry"
+    "jaartal": 1980,
+    "author": "Hengeveld, Ineke"
   },
   {
-    "id": 911952,
-    "query": "website",
-    "titel": "Websites maken voor kinderen / Studio Visual Steps",
+    "id": 751340,
+    "query": "test",
+    "titel": "Coole chick of tuttebol : welk type ben jij? : 50 tests om: je toekomst te ontrafelen, je eigen stijl te openbaren en je ware ik te ontdekken! / Michelle Hainer",
     "taal": "dut",
-    "jaartal": 2009,
-    "author": "Emma Schipper"
+    "jaartal": 2007,
+    "author": "Hainer, Michelle"
   },
   {
-    "id": 912858,
-    "query": "website",
-    "titel": "De internet scorecard 2.0 : realiseer je online strategie / Geert-Jan Smits & Joost Steins Bisschop",
+    "id": 752789,
+    "query": "test",
+    "titel": "AIDS information and education in the Netherlands : summary national programme 1992 ; general messages 'safe sex' and 'HIV test' ; addresses / Cees J.M. van Eijk",
+    "taal": "eng",
+    "jaartal": 1992,
+    "author": "van Eijk, Cees J.M."
+  },
+  {
+    "id": 753312,
+    "query": "test",
+    "titel": "De HIV-test, wel of niet doen? : Antwoorden op de meest gestelde vragen / Stichting Aids Fonds",
     "taal": "dut",
-    "jaartal": 2009,
-    "author": "Smits, Geert-Jan"
+    "jaartal": 1997,
+    "author": "Auteur onbekend"
   },
   {
-    "id": 912882,
-    "query": "website",
-    "titel": "Websites met PHP 5 / Ward van der Put",
+    "id": 754999,
+    "query": "test",
+    "titel": "Profiel van de aanvragers van een HIV-test bij de GGD Leiden e.o. : 1991, 1992, 1993 / Hanneke Tielen, Jacky Voskuil, Sandra Wijnands",
     "taal": "dut",
-    "jaartal": 2009,
-    "author": "van der Put, Ward"
+    "jaartal": 1994,
+    "author": "Tielen, Hanneke"
   },
   {
-    "id": 916239,
-    "query": "website",
-    "titel": "Websites ontwikkelen : met HTML, CSS & Dreamweaver : zelfstudiehandboek / Frances de Waal",
+    "id": 757250,
+    "query": "test",
+    "titel": "Test of a path-analytic model of condom use among homosexual men / C.J. Hoekzema ... [et al.]",
     "taal": "dut",
-    "jaartal": 2009,
-    "author": "de Waal, Frances"
+    "jaartal": 1993,
+    "author": "Hoekzema, C.J."
   },
   {
-    "id": 924336,
-    "query": "website",
-    "titel": "Een website maken voor uw eigen bedrijf / Studio Visual Steps",
-    "taal": "dut",
-    "jaartal": 2009,
-    "author": "Alex Wit"
-  },
-  {
-    "id": 924337,
-    "query": "website",
-    "titel": "Websites bouwen met Web Easy / Studio Visual Steps",
-    "taal": "dut",
-    "jaartal": 2009,
-    "author": "Alex Wit"
-  },
-  {
-    "id": 932501,
-    "query": "website",
-    "titel": "Schrijfwijzer voor het web : tactieken en technieken voor creatieve schrijvers op internet / Chrétien Breukers en Merel Roze",
-    "taal": "dut",
-    "jaartal": 2009,
-    "author": "Breukers, Chrétien"
-  },
-  {
-    "id": 949623,
-    "query": "website",
-    "titel": "Websites / Petra Cremers",
-    "taal": "dut",
-    "jaartal": 2010,
-    "author": "Cremers, Petra"
-  },
-  {
-    "id": 959376,
-    "query": "website",
-    "titel": "Websites opmaken met CSS / Mark Creeten",
-    "taal": "dut",
-    "jaartal": 2010,
-    "author": "Creeten, Mark"
-  },
-  {
-    "id": 960845,
-    "query": "website",
-    "titel": "Roze klik? : Adviesrapport over website Internationaal Homo/Lesbisch Informatiecentrum en Archief (IHLIA) / Michel Otten",
-    "taal": "dut",
-    "jaartal": 2008,
-    "author": "Otten, M."
-  },
-  {
-    "id": 961092,
-    "query": "website",
-    "titel": "Reader : een verzameling teksten, literatuurlijst, filmlijst en selectie websites bij de Internationale Week 2001 / samenst.: Anne Krul en Marlon Reina",
+    "id": 757591,
+    "query": "test",
+    "titel": "HIV testing: a study of why gay men in the Netherlands choose not to test / Shelley Facente",
     "taal": "eng",
     "jaartal": 2001,
-    "author": "A. Krul"
+    "author": "Facente, S."
   },
   {
-    "id": 964765,
-    "query": "website",
-    "titel": "Sociale netwerksites : de voordelen en risico's van Hyves, Facebook, Twitter etc. / auteur: Frank Heinen",
-    "taal": "dut",
-    "jaartal": 2010,
-    "author": "Heinen, Frank"
-  },
-  {
-    "id": 969691,
-    "query": "website",
-    "titel": "Check je webtekst : schrijf heldere, pakkende en vindbare content / Eric Tiggeler",
-    "taal": "dut",
-    "jaartal": 2010,
-    "author": "Tiggeler, Eric"
-  },
-  {
-    "id": 971215,
-    "query": "website",
-    "titel": "Get to the top on Google : tips and techniques to get your site to the top of the search engine ranks and stay there / David Viney",
+    "id": 759697,
+    "query": "test",
+    "titel": "The Male Impotence Test : The MIT Manual / Ahmed El Senoussi",
     "taal": "eng",
+    "jaartal": 1964,
+    "author": "Senoussi, A."
+  },
+  {
+    "id": 797329,
+    "query": "test",
+    "titel": "Handboek psychodiagnostiek en beperkte begaafdheid : classificatie, test-, schaal- en vragenlijstgebruik / D.W. Kraijer, J.J. Plas",
+    "taal": "dut",
+    "jaartal": 2007,
+    "author": "Kraijer, D.W."
+  },
+  {
+    "id": 812429,
+    "query": "test",
+    "titel": "Sociaal cognitieve vaardigheden test : handleiding / Teun G. van Manen, Pier J.M. Prins, Paul M.G. Emmelkamp",
+    "taal": "dut",
+    "jaartal": 2007,
+    "author": "van Manen, Teun G."
+  },
+  {
+    "id": 815042,
+    "query": "test",
+    "titel": "Test je talent / Mireille Geus en Laura Carina Mesland",
+    "taal": "dut",
     "jaartal": 2008,
-    "author": "Viney, David"
+    "author": "Geus, Mireille"
   },
   {
-    "id": 984250,
-    "query": "website",
-    "titel": "Web design index ...",
-    "taal": "mul",
-    "jaartal": 2000,
-    "author": "Auteur onbekend"
-  },
-  {
-    "id": 987424,
-    "query": "website",
-    "titel": "Basisgids uw website in de top 10 van Google / Studio Visual Steps",
+    "id": 815048,
+    "query": "test",
+    "titel": "Gare dino's en de Grote Kika Cola Test / Tais Teng en Laura van Hoeij",
     "taal": "dut",
-    "jaartal": 2011,
-    "author": "Floris Keijser"
+    "jaartal": 2008,
+    "author": "Teng, Tais"
   },
   {
-    "id": 988031,
-    "query": "website",
-    "titel": "Bagage : kennis van de Nederlandse samenleving / Nelleke Koot",
+    "id": 893062,
+    "query": "test",
+    "titel": "TMap NEXT : Business Driven Test Management / Leo van der Aalst ... [et al.]",
     "taal": "dut",
-    "jaartal": 2011,
-    "author": "Koot, Nelleke"
+    "jaartal": 2008,
+    "author": "Leo van der Aalst"
   },
   {
-    "id": 996455,
-    "query": "website",
-    "titel": "Don't make me think! : een nuchtere kijk op webusability / Steve Krug",
+    "id": 902525,
+    "query": "test",
+    "titel": "The Times IQ-tests / Ken Russell Dl. 2,  400 niet eerder gepubliceerde vragen / [vert. uit het Engels: Marten Hofstede]",
     "taal": "dut",
-    "jaartal": 2011,
-    "author": "Krug, Steve"
+    "jaartal": 2009,
+    "author": "Russell, Ken"
   },
   {
-    "id": 996456,
-    "query": "website",
-    "titel": "Adobe Dreamweaver CS5 : ontwerp van statische websites met XHTML, CSS en Spry / Patrick Verhaert",
+    "id": 919162,
+    "query": "test",
+    "titel": "Psychologische tests voor dummies / Liam Healy",
+    "taal": "dut",
+    "jaartal": 2009,
+    "author": "Healy, Liam"
+  },
+  {
+    "id": 922556,
+    "query": "test",
+    "titel": "Waarom hij, waarom zij? : test je persoonlijkheid en vind de ware liefde / Helen Fisher",
+    "taal": "dut",
+    "jaartal": 2009,
+    "author": "Fisher, Helen"
+  },
+  {
+    "id": 941595,
+    "query": "test",
+    "titel": "The Times IQ-tests / Ken Russell Dl. 3,  : 400 niet eerder gepubliceerde vragen / [vert. uit het Engels: Marten Hofstede]",
     "taal": "dut",
     "jaartal": 2010,
-    "author": "Verhaert, Patrick"
+    "author": "Russell, Ken"
   },
   {
-    "id": 998572,
-    "query": "website",
-    "titel": "Modern redesign met HTML5, CSS3 en JavaScript / Peter Kassenaar",
+    "id": 959818,
+    "query": "test",
+    "titel": "Testen en getest worden : over belangen en beginselen rond de HIV-test / A.H. Vedder",
     "taal": "dut",
-    "jaartal": 2011,
-    "author": "Kassenaar, Peter"
+    "jaartal": 1990,
+    "author": "Vedder, A."
   },
   {
-    "id": 1006197,
-    "query": "website",
-    "titel": "Verleiden op internet : hoe maak je een website onweerstaanbaar? / Aartjan van Erkel",
+    "id": 960854,
+    "query": "test",
+    "titel": "Test de test : een boekje voor mensen die een hiv-test overwegen",
     "taal": "dut",
-    "jaartal": 2011,
-    "author": "van Erkel, Aartjan"
-  },
-  {
-    "id": 1017567,
-    "query": "website",
-    "titel": "Samen lezen : oefenen met lezen van A1 naar A2 / Elizabeth Termeer",
-    "taal": "dut",
-    "jaartal": 2011,
-    "author": "Termeer, Elizabeth"
-  },
-  {
-    "id": 1026389,
-    "query": "website",
-    "titel": "Basisgids populaire webtoepassingen / Studio Visual Steps",
-    "taal": "dut",
-    "jaartal": 2011,
-    "author": "Henk Mol"
-  },
-  {
-    "id": 1033917,
-    "query": "website",
-    "titel": "De kleine Je website promoten voor dummies / Jan Zimmerman",
-    "taal": "dut",
-    "jaartal": 2012,
-    "author": "Zimmerman, Jan"
-  },
-  {
-    "id": 1043965,
-    "query": "website",
-    "titel": "Webdesign 4 / Gabriel Sánchez Cano",
-    "taal": "dut",
-    "jaartal": 2012,
-    "author": "Cano, Gabriel Sánchez"
-  },
-  {
-    "id": 1045102,
-    "query": "website",
-    "titel": "Websites maken met gratis software : snel aan de slag zonder voorkennis / Eric Tiggeler",
-    "taal": "dut",
-    "jaartal": 2012,
-    "author": "Tiggeler, Eric"
-  },
-  {
-    "id": 1047409,
-    "query": "website",
-    "titel": "Basisgids websites maken met WordPress / Studio Visual Steps",
-    "taal": "dut",
-    "jaartal": 2012,
-    "author": "Alex Wit"
-  },
-  {
-    "id": 1050011,
-    "query": "website",
-    "titel": "Zoekmachine optimalisatie : uw website op toppositie bij Google / Fred Zoer",
-    "taal": "dut",
-    "jaartal": 2012,
-    "author": "Zoer, Fred"
-  },
-  {
-    "id": 1070161,
-    "query": "website",
-    "titel": "HTML & CSS : websites ontwerpen en bouwen / Jon Duckett",
-    "taal": "dut",
-    "jaartal": 2012,
-    "author": "Duckett, Jon"
-  },
-  {
-    "id": 1071109,
-    "query": "website",
-    "titel": "The internet book of life : use the web to grow richer, smarter, healthier and happier / Irene E. McDermott",
-    "taal": "eng",
-    "jaartal": 2011,
-    "author": "McDermott, Irene E."
-  },
-  {
-    "id": 1071223,
-    "query": "website",
-    "titel": "Tips en tools voor Joomla! 2.5 en 3.0 : professionele websites voor iedereen / Eric Tiggeler",
-    "taal": "dut",
-    "jaartal": 2012,
-    "author": "Tiggeler, Eric"
-  },
-  {
-    "id": 1087440,
-    "query": "website",
-    "titel": "Wegwijs in WordPress : blogs en websites maken / Hannie van Osnabrugge",
-    "taal": "dut",
-    "jaartal": 2013,
-    "author": "van Osnabrugge, Hannie"
-  },
-  {
-    "id": 1096841,
-    "query": "website",
-    "titel": "Seksuele gezondheid voor homoseksuele jongens en lesbische meiden : website over safe seks activiteiten met homo-lesbo jongerengroepen / [teksten Pinkeltje-GGD Nijmegen ... etc.]",
-    "taal": "dut",
-    "jaartal": 2005,
+    "jaartal": 1999,
     "author": "Auteur onbekend"
   },
   {
-    "id": 1098144,
-    "query": "website",
-    "titel": "Mobile webdesign / Luke Wroblewski",
+    "id": 963149,
+    "query": "test",
+    "titel": "HIV and me : the complete gay guide to the HIV test and living with the virus / [text: Collin Richardson ; ill.: Mark Blann]",
+    "taal": "eng",
+    "jaartal": 2003,
+    "author": "Richardson, C."
+  },
+  {
+    "id": 963903,
+    "query": "test",
+    "titel": "Alles over psychologische tests / Jack J.R. van Minden",
+    "taal": "dut",
+    "jaartal": 2010,
+    "author": "van Minden, Jack J.R."
+  },
+  {
+    "id": 989450,
+    "query": "test",
+    "titel": "The official guide to the TOEFL test / ETS",
+    "taal": "eng",
+    "jaartal": 2009,
+    "author": "Auteur onbekend"
+  },
+  {
+    "id": 1012743,
+    "query": "test",
+    "titel": "Alles over management tests : tests, tools en cases voor managers met ambitie / Jack J.R. van Minden",
+    "taal": "dut",
+    "jaartal": 2011,
+    "author": "van Minden, Jack J.R."
+  },
+  {
+    "id": 1020843,
+    "query": "test",
+    "titel": "Als beste getest / [tekst:] Hercules",
+    "taal": "dut",
+    "jaartal": 2011,
+    "author": "Valkema"
+  },
+  {
+    "id": 1026406,
+    "query": "test",
+    "titel": "Verlaag uw hartleeftijd : test zelf uw hartleeftijd / Lothar Schwarz & Markus Schwarz",
+    "taal": "dut",
+    "jaartal": 2011,
+    "author": "Schwarz, Lothar"
+  },
+  {
+    "id": 1056529,
+    "query": "test",
+    "titel": "Stukje bij beestje : test je kennis van de dierenwereld / Lars Gejl",
+    "taal": "dut",
+    "jaartal": 2012,
+    "author": "Gejl, Lars"
+  },
+  {
+    "id": 1092583,
+    "query": "test",
+    "titel": "Test. / Mirjam Mous",
     "taal": "dut",
     "jaartal": 2013,
-    "author": "Wroblewski, Luke"
+    "author": "Mous, Mirjam"
   },
   {
-    "id": 1099031,
-    "query": "website",
-    "titel": "Responsive webdesign / Ethan Marcotte",
+    "id": 1096314,
+    "query": "test",
+    "titel": "Passing the Test: The Transgender Self, Society and Femininity / Allison Bischoff",
+    "taal": "eng",
+    "jaartal": 2011,
+    "author": "Bischoff, A."
+  },
+  {
+    "id": 1098643,
+    "query": "test",
+    "titel": "De test / Joelle Charbonneau",
     "taal": "dut",
     "jaartal": 2013,
-    "author": "Marcotte, Ethan"
+    "author": "Charbonneau, Joelle"
   },
   {
-    "id": 1107083,
-    "query": "website",
-    "titel": "Geld verdienen met je webshop : ontwerpen, bouwen, optimaliseren, promoten / hoofdredacteur Patrick Smits",
-    "taal": "dut",
-    "jaartal": 2014,
-    "author": "Patrick Smits"
-  },
-  {
-    "id": 1109931,
-    "query": "website",
-    "titel": "Webdesign : van concept naar realisatie / Hedwyg van Groenendaal",
-    "taal": "dut",
-    "jaartal": 2014,
-    "author": "van Groenendaal, Hedwyg"
-  },
-  {
-    "id": 1110943,
-    "query": "website",
-    "titel": "Adobe Edge Animate : using web standard to create inertactive websites / Simon Widjaja",
+    "id": 1118848,
+    "query": "test",
+    "titel": "Stress test : reflections on financial crises / Timothy F. Geithner",
     "taal": "eng",
     "jaartal": 2014,
-    "author": "Widjaja, Simon"
+    "author": "Geithner, Timothy F."
   },
   {
-    "id": 1113652,
-    "query": "website",
-    "titel": "Effectieve zakenbrieven ook via internet (e-mail, websites) : adviezen en oefenopdrachten / Marjan Palm-Hoebé",
-    "taal": "dut",
-    "jaartal": 2014,
-    "author": "Palm-Hoebé, Marjan"
-  },
-  {
-    "id": 1113677,
-    "query": "website",
-    "titel": "Know your onions : web design / Drew de Soto",
+    "id": 1131124,
+    "query": "test",
+    "titel": "Rails 4 test prescriptions : build a healthy codebase / Noel Rappin",
     "taal": "eng",
     "jaartal": 2014,
-    "author": "de Soto, Drew"
+    "author": "Rappin, Noel"
   },
   {
-    "id": 1114923,
-    "query": "website",
-    "titel": "Usability / Peter Kassenaar",
+    "id": 1136443,
+    "query": "test",
+    "titel": "Praktijkboek psychologische test : voorbereidende oefeningen / John Wiering",
     "taal": "dut",
-    "jaartal": 2014,
-    "author": "Kassenaar, Peter"
+    "jaartal": 2015,
+    "author": "Wiering, John"
   },
   {
-    "id": 1115553,
-    "query": "website",
-    "titel": "Bijzondere overeenkomsten begrepen / Mr. I. Timmer",
+    "id": 1136530,
+    "query": "test",
+    "titel": "Narissa's spannende test / Ella Gray",
     "taal": "dut",
-    "jaartal": 2014,
-    "author": "Timmer, I."
+    "jaartal": 2015,
+    "author": "Gray, Ella"
   },
   {
-    "id": 1117215,
-    "query": "website",
-    "titel": "Wat is onderzoek ? : praktijkboek voor methoden en technieken / Nel Verhoeven",
-    "taal": "dut",
-    "jaartal": 2014,
-    "author": "Verhoeven, Nel"
-  },
-  {
-    "id": 1117593,
-    "query": "website",
-    "titel": "Toptaken : ontdek de 5 dingen die mensen online écht van je willen / Christiaan W. Lustig, Natanja de Bruin, Lonneke Theelen en Boudewijn Bugter",
-    "taal": "dut",
-    "jaartal": 2014,
-    "author": "Lustig, Christiaan W."
-  },
-  {
-    "id": 1118410,
-    "query": "website",
-    "titel": "Een website maken voor uw eigen bedrijf / Studio Visual Steps",
-    "taal": "dut",
-    "jaartal": 2014,
-    "author": "Studio Visual Steps, Uithoorn"
-  },
-  {
-    "id": 1120030,
-    "query": "website",
-    "titel": "Tips en tools voor Joomla! 3 : professionele websites voor iedereen / Eric Tiggeler",
-    "taal": "dut",
-    "jaartal": 2014,
-    "author": "Tiggeler, Eric"
-  },
-  {
-    "id": 1125002,
-    "query": "website",
-    "titel": "Het webdesignboek : de ultieme gids voor het maken van prachtige websites / hoofdredacteur Patrick Smits",
-    "taal": "dut",
-    "jaartal": 2014,
-    "author": "Patrick Smits"
-  },
-  {
-    "id": 1127887,
-    "query": "website",
-    "titel": "HTML & CSS : design and build websites / Jon Duckett",
+    "id": 1137252,
+    "query": "test",
+    "titel": "The great prostate hoax : how big medicine hijacked the PSA test and caused a public health disaster / Richard J. Ablin, PhD",
     "taal": "eng",
     "jaartal": 2014,
-    "author": "Duckett, Jon"
+    "author": "Ablin, Richard J."
   },
   {
-    "id": 1127900,
-    "query": "website",
-    "titel": "Etnische websites, behoeften en netwerken : over het gebruik van internet door jongeren / Jaswina Elahi",
-    "taal": "dut",
-    "jaartal": 2014,
-    "author": "Elahi, Jaswina"
-  },
-  {
-    "id": 1131138,
-    "query": "website",
-    "titel": "High performance responsive design : building faster sites across devices / Tom Barker",
-    "taal": "eng",
-    "jaartal": 2014,
-    "author": "Barker, Tom"
-  },
-  {
-    "id": 1131139,
-    "query": "website",
-    "titel": "Designing for performance : weighing aesthetics and speed / Lara Callender Hogan",
-    "taal": "eng",
-    "jaartal": 2014,
-    "author": "Hogan, Lara Callender"
-  },
-  {
-    "id": 1132314,
-    "query": "website",
-    "titel": "The responsive web / Matthew Carver",
-    "taal": "eng",
-    "jaartal": 2015,
-    "author": "Carver, Matthew"
-  },
-  {
-    "id": 1132783,
-    "query": "website",
-    "titel": "Responsive web design with Adobe Photoshop / Dan Rose",
-    "taal": "eng",
-    "jaartal": 2015,
-    "author": "Rose, Dan"
-  },
-  {
-    "id": 1133971,
-    "query": "website",
-    "titel": "Developing web components / Jarrod Overson and Jason Strimpel",
-    "taal": "eng",
-    "jaartal": 2015,
-    "author": "Overson, Jarrod"
-  },
-  {
-    "id": 1133988,
-    "query": "website",
-    "titel": "Je bent geweldig / Jill Mansell",
-    "taal": "dut",
-    "jaartal": 2015,
-    "author": "Mansell, Jill"
-  },
-  {
-    "id": 1135495,
-    "query": "website",
-    "titel": "Web typografie klinkt goed, maar ziet er niet uit / Bas Jacobs",
-    "taal": "dut",
-    "jaartal": 2015,
-    "author": "Jacobs, Bas"
-  },
-  {
-    "id": 1136734,
-    "query": "website",
-    "titel": "Rapport over rapporteren : op papier en digitaal / Wim Hoogland, Roel Dik, Ingrid Brand",
-    "taal": "dut",
-    "jaartal": 2015,
-    "author": "Hoogland, Wim"
-  },
-  {
-    "id": 1138636,
-    "query": "website",
-    "titel": "Parijs / Kristien In-'t-Ven",
-    "taal": "dut",
-    "jaartal": 2015,
-    "author": "In-'t-Ven, Kristien"
-  },
-  {
-    "id": 1140261,
-    "query": "website",
-    "titel": "Verbintenissenrecht begrepen / mr. I. Timmer, mr. A.L.A.M Paffen",
-    "taal": "dut",
-    "jaartal": 2015,
-    "author": "Timmer, I."
-  },
-  {
-    "id": 1140844,
-    "query": "website",
-    "titel": "Heel Holland Googelt : plaats uw website bovenaan in de zoekresultaten / Ita Pronk-Verduijn",
-    "taal": "dut",
-    "jaartal": 2015,
-    "author": "Pronk-Verduijn, Ita"
-  },
-  {
-    "id": 1151177,
-    "query": "website",
-    "titel": "Het webdesignboek : alles wat je nodig hebt om te werken met HTML5, CSS3, Javascript en meer ... / hoofdredacteur Patrick Smits",
+    "id": 1140999,
+    "query": "test",
+    "titel": "Testjaarboek 2017 : bijna 1500 producten en diensten getest / auteur: Consumentenbond",
     "taal": "dut",
     "jaartal": 2016,
-    "author": "Patrick Smits"
+    "author": "Alfred Jacobsen"
   },
   {
-    "id": 1153248,
-    "query": "website",
-    "titel": "Webdesign voor dummies / Lisa Lopuck",
-    "taal": "dut",
-    "jaartal": 2016,
-    "author": "Lopuck, Lisa"
+    "id": 1150723,
+    "query": "test",
+    "titel": "Barron's TOEFL iBT : internet-based test / Pamela J. Sharpe",
+    "taal": "eng",
+    "jaartal": 2013,
+    "author": "Sharpe, Pamela J."
   },
   {
-    "id": 1162050,
-    "query": "website",
-    "titel": "Maak uw website met WordPress / Studio Visual Steps",
-    "taal": "dut",
-    "jaartal": 2016,
-    "author": "Studio Visual Steps, Uithoorn"
-  },
-  {
-    "id": 1162139,
-    "query": "website",
-    "titel": "Creëren met code : bouw je eigen website / auteur: Clyde Hatter",
-    "taal": "dut",
-    "jaartal": 2016,
-    "author": "Hatter, Clyde"
-  },
-  {
-    "id": 1170181,
-    "query": "website",
-    "titel": "Experttips voor websites met resultaat : creëer een succesvolle website met de KLIK-methode voor meer klanten / Vanessa Carreiro & Maarten Ligthart",
-    "taal": "dut",
-    "jaartal": 2017,
-    "author": "Carreiro, Vanessa"
-  },
-  {
-    "id": 1174725,
-    "query": "website",
-    "titel": "Webdesign voor beginners / hoofdredacteur Patrick Smits",
-    "taal": "dut",
-    "jaartal": 2017,
-    "author": "Patrick Smits"
-  },
-  {
-    "id": 1176227,
-    "query": "website",
-    "titel": "Evil by design : interaction design to lead us into temptation / Chris Nodder",
+    "id": 1150730,
+    "query": "test",
+    "titel": "The official guide to the TOEFL® test / ETS",
     "taal": "eng",
     "jaartal": 2015,
-    "author": "Nodder, Chris"
+    "author": "Educational Testing Service, Princeton,N.J."
   },
   {
-    "id": 1177825,
-    "query": "website",
-    "titel": "Een website maken voor kids / Greg Rickaby",
+    "id": 1150743,
+    "query": "test",
+    "titel": "Essential cybersecurity science : build, test, and evaluate secure systems / Josiah Dykstra",
+    "taal": "eng",
+    "jaartal": 2015,
+    "author": "Dykstra, Josiah"
+  },
+  {
+    "id": 1153575,
+    "query": "test",
+    "titel": "De test / Hjorth Rosenfeldt",
+    "taal": "dut",
+    "jaartal": 2016,
+    "author": "Rosenfeldt, Hjorth"
+  },
+  {
+    "id": 1158341,
+    "query": "test",
+    "titel": "MeisjeDjamila : life in Texas, expectations vs reality, holiday ins & outs, emoji's fashion, diy's, quiz, test, puzzels en héél véél challenges van Djamila / idee en inhoud: Djamila (MeisjeDjamila)",
+    "taal": "dut",
+    "jaartal": 2016,
+    "author": "Djamila\""
+  },
+  {
+    "id": 1159051,
+    "query": "test",
+    "titel": "Je kind als proefkonijn : de 25 leukste psychologische tests voor thuis voor kinderen van 0-12 jaar / Otje van der Lelij",
+    "taal": "dut",
+    "jaartal": 2016,
+    "author": "van der Lelij, Otje"
+  },
+  {
+    "id": 1160130,
+    "query": "test",
+    "titel": "Testjaarboek 2018 : bijna 2000 producten en diensten getest / auteur: Consumentenbond",
     "taal": "dut",
     "jaartal": 2017,
-    "author": "Rickaby, Greg"
+    "author": "Alfred Jacobsen"
   },
   {
-    "id": 1181964,
-    "query": "website",
-    "titel": "Responsive webdesign / Chris Ward",
+    "id": 1160672,
+    "query": "test",
+    "titel": "Pub Quiz Amsterdam : test je kennis in 99 quizvragen / samenstelling Monique den Ouden",
+    "taal": "dut",
+    "jaartal": 2016,
+    "author": "Monique den Ouden"
+  },
+  {
+    "id": 1163652,
+    "query": "test",
+    "titel": "De grote voetbal-iq-test : daag je vrienden uit! / Willem van Beeren & Harry Hamer",
+    "taal": "dut",
+    "jaartal": 2016,
+    "author": "van Beeren, Willem"
+  },
+  {
+    "id": 1172754,
+    "query": "test",
+    "titel": "The tickle test / Kathryn White, Adrian Reynolds",
+    "taal": "eng",
+    "jaartal": 2017,
+    "author": "White, Kathryn"
+  },
+  {
+    "id": 1176228,
+    "query": "test",
+    "titel": "Building microservices with ASP.NET Core : develop, test, and deploy cross-platform services in the cloud / Kevin Hoffman",
+    "taal": "eng",
+    "jaartal": 2017,
+    "author": "Hoffman, Kevin"
+  },
+  {
+    "id": 1176724,
+    "query": "test",
+    "titel": "Gentest of geen test? : Hoe de NIPT de zwangerschap verandert / Marcel Zuijderland",
     "taal": "dut",
     "jaartal": 2017,
-    "author": "Ward, Chris"
+    "author": "Zuijderland, Marcel"
   },
   {
-    "id": 1195335,
-    "query": "website",
-    "titel": "Websites maken voor dummies / David A. Crowder",
+    "id": 1179447,
+    "query": "test",
+    "titel": "The new business road test : what entrepreneurs and investors should do before launching a lean start-up / John Mullins",
+    "taal": "eng",
+    "jaartal": 2018,
+    "author": "Mullins, John"
+  },
+  {
+    "id": 1181922,
+    "query": "test",
+    "titel": "Over de grens : de vluchtelingencrisis als reality test / Monika Sie Dhian Ho, René Cuperus & Annelies Pilon (red.)",
+    "taal": "dut",
+    "jaartal": 2017,
+    "author": "Monika Sie Dhian Ho"
+  },
+  {
+    "id": 1182889,
+    "query": "test",
+    "titel": "Komt een test bij de dokter / T.A. Boer, S.M.H. Einerhand, J.N. de Haas- de Vries en M.N. van Rijswijk",
     "taal": "dut",
     "jaartal": 2018,
-    "author": "Crowder, David A."
+    "author": "Boer, T.A."
   },
   {
-    "id": 1197192,
-    "query": "website",
-    "titel": "Straf(proces)recht begrepen / mr. J.H.J. Verbaan",
+    "id": 1188710,
+    "query": "test",
+    "titel": "Talentenwijzer : talentontwikkelingsprogramma met online test / Djoerd Hiemstra",
     "taal": "dut",
     "jaartal": 2018,
-    "author": "Verbaan, J.H.J."
+    "author": "Hiemstra, Djoerd"
+  },
+  {
+    "id": 1192274,
+    "query": "test",
+    "titel": "\"AZT en de (mogelijke) konsekwenties voor het test- en preventiebeleid nader bekeken\"!",
+    "taal": "dut",
+    "jaartal": 1988,
+    "author": "Auteur onbekend"
   }
 ]

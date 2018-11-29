@@ -2,13 +2,13 @@
 
 ![Main view](ScreenshotMain.png)
 
-[Try out my application here!](https://joostflick.github.io/frontend-data/)
+[Try out my application here!](https://joostflick.github.io/functional-programming/)
 
 _links to old READMEs_
 
-[Old README about code](README-code.md)
+[Old document with more code examples](README-code.md)
 
-[Old README](README-old.md)
+[Old README before redo](README-old.md)
 
 ## Installation & usage
 

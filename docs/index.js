@@ -1,4 +1,5 @@
 // https://blog.risingstack.com/d3-js-tutorial-bar-charts-with-javascript/
+
 var data = require('./percentages.json')
 
 // pass data to this function to return an array with the unique languages and amount of books for that language
@@ -95,7 +96,6 @@ const chart = svg
   .append('g')
   .attr('transform', `translate(${margin}, ${margin})`)
 
-//
 const yScale = d3
   .scaleLinear()
   .range([height, 0])

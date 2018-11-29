@@ -84,7 +84,7 @@ Although the rest of the fields of the book objects aren't used at the moment, t
 - D3 functionality, converting blocks or observables to something I can use
 - Finding a convenient way to get my data to the browser to be used for my graphs (using localhost or browserify?)
 - Converting data to usable formats (this got a little easier when I moved my data cleaning logic to my d3 file)
-- Using D3 selectors without console logging almost everything
+- Using D3 selectors and nesting and the combination of those two
 
 ## What would I have done differently if I had more time
 
@@ -93,3 +93,9 @@ Although the rest of the fields of the book objects aren't used at the moment, t
 - Using more of the data fields to give the user a more indepth look in why certain themes are more popular in certain languages
 - Making a dropdown to select the year to display (implemented in my [Frontend data repo](https://github.com/joostflick/frontend-data))
 - Using a wrapper like wouter made, or at least a more conform way to handle the get requests. Although I like the fact that I wrote this one myself it is far from perfect.
+
+## Some insights
+
+- D3 can do a lot, but takes time getting used to (different ways of nesting, which selector selects what)
+- console logging everything that doesnt do what it should helps(both responses from get requests and selectors not doing what I want them to)
+- Even though it's only about two weeks after first submitting this application, I immediately saw a lot of things I would have done differently now

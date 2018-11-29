@@ -48,7 +48,6 @@ function getResults(page, query) {
       .then(function(res) {
         JSON.parse(res).aquabrowser.results.result.forEach(function(boek, id) {
           var boekInstantie = {
-            //pageId : id,
             id: parseInt(boek.id.nativeid),
             query: query,
             titel: boek.titles.title.$t,
@@ -109,41 +108,8 @@ function removeDuplicate(originalArray, prop) {
 
 // If all promises are resolved, do this
 Promise.all(promises).then(function(res) {
-  //console.log(boeken)
-
   // Remove duplicates and sort by year
   var cleanedBoeken = removeDuplicate(boeken.sort(dynamicSort('jaartal')), 'id')
-
-  // Empty array for different languages
-  // languages = []
-
-  // var differentLanguages = removeDuplicate(cleanedBoeken, 'taal')
-
-  // differentLanguages.forEach(function(boek) {
-  //   languages.push(boek.taal)
-  //   console.log(languages)
-  // })
-
-  // Code below needs to be updated to be dynamic
-  // boekenDut = []
-  // boekenEng = []
-  // boekenGer = []
-  // var boekenOther = 0
-
-  // cleanedBoeken.forEach(function(boek) {
-  //   if (boek.taal === languages[0]) {
-  //     boekenDut.push(boek)
-  //   } else if (boek.taal === languages[1]) {
-  //     boekenEng.push(boek)
-  //   } else if (boek.taal === languages[2]) {
-  //     boekenGer.push(boek)
-  //   } else {
-  //     boekenOther++
-  //   }
-  // })
-  //console.log(boekenDut)
-
-  console.log(cleanedBoeken)
 
   fs.writeFile(
     'docs/percentages.json',
@@ -152,35 +118,3 @@ Promise.all(promises).then(function(res) {
     function() {}
   )
 })
-
-//   var percentages = calculatePercentage(
-//     boekenDut.length,
-//     boekenEng.length,
-//     boekenGer.length,
-//     boekenOther
-//   )
-//   percentageArray.push(
-//     { year: year, lang: 'Dutch', value: percentages[0] },
-//     { year: year, lang: 'English', value: percentages[1] },
-//     { year: year, lang: 'German', value: percentages[2] },
-//     { year: year, lang: 'Other', value: percentages[3] }
-//   )
-//   console.log(percentageArray)
-//   fs.writeFile(
-//     'docs/percentages.json',
-//     JSON.stringify(percentageArray, null, '  '),
-//     'utf8',
-//     function() {}
-//   )
-// })
-
-// Calculate percentages
-// function calculatePercentage(dut, eng, ger, other) {
-//   var total = dut + eng + ger + other
-//   var percentDut = (dut * 100) / total
-//   var percentEng = (eng * 100) / total
-//   var percentOther = (other * 100) / total
-//   var percentGer = (ger * 100) / total
-
-//   return [percentDut, percentEng, percentGer, percentOther]
-// }

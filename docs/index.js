@@ -35,8 +35,8 @@ for (var a = 0; a < languagesCount.length; a++) {
   }
 }
 
+// display the search query in title
 var query = data[0].query
-
 document.getElementById('heading').innerHTML =
   'Book % per language for query "' + query + '"'
 
@@ -68,6 +68,13 @@ function mouseMove() {
     .style('top', event.pageY - 10 + 'px')
     .style('left', event.pageX + 10 + 'px')
 }
+
+// click event for bar
+function clickLang(d, i) {
+  document.getElementById('details').innerHTML =
+    'Language: ' + d.language + ', Percentage: ' + d.percent + '%'
+}
+
 // color scale
 var color = d3.scaleOrdinal([
   '#4daf4a',
@@ -116,13 +123,16 @@ chart
     'x',
     a => xScale(a.language) + (xScale.bandwidth() - xScale.bandwidth()) / 2
   )
-  .attr('y', s => yScale(s.percent))
-  .attr('height', s => height - yScale(s.percent))
-  .attr('width', xScale.bandwidth())
   // mouse events
   .on('mouseover', onMouseOver)
   .on('mouseout', onMouseOut)
   .on('mousemove', mouseMove)
+  .on('click', clickLang)
+  .transition()
+  .duration(400)
+  .attr('y', s => yScale(s.percent))
+  .attr('height', s => height - yScale(s.percent))
+  .attr('width', xScale.bandwidth())
   // color
   .attr('fill', function(d) {
     return color(d.language)

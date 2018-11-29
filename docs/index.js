@@ -1,12 +1,81 @@
 // https://blog.risingstack.com/d3-js-tutorial-bar-charts-with-javascript/
 var data = require('./percentages.json')
-//data2 = JSON.parse({"url":"https://raw.githubusercontent.com/joostflick/functional-programming/master/docs/percentages.json"})
-console.log(data)
 
-var year = data[0].year
+// pass data to this function to return an array with the unique languages and amount of books for that language
+function languagesCounter(data) {
+  return d3
+    .nest()
+    .key(function(d) {
+      return d.taal
+    })
+    .rollup(function(v) {
+      return v.length
+    })
+    .entries(data)
+}
 
-document.getElementById('heading').innerHTML = 'Book % per language in ' + year
+// add up all value properties in an array
+function countTotal(array) {
+  var total = 0
+  array.forEach(function(d) {
+    total = total + d.value
+  })
+  return total
+}
 
+var percentages = []
+var languagesCount = languagesCounter(data)
+
+//percentages for pie chart
+for (var a = 0; a < languagesCount.length; a++) {
+  // calculate percentage data for the piechart
+  percentages[a] = {
+    language: languagesCount[a].key,
+    percent: (languagesCount[a].value / countTotal(languagesCount)) * 100
+  }
+}
+
+var query = data[0].query
+
+document.getElementById('heading').innerHTML =
+  'Book % per language for query "' + query + '"'
+
+// tooltip for mouse over
+var tooltip = d3
+  .select('body')
+  .append('div')
+  .style('position', 'absolute')
+  .style('z-index', '10')
+  .style('visibility', 'hidden')
+  .attr('class', 'tooltip')
+
+// set the tooltip and style for the barchart
+function onMouseOver(d, i) {
+  d3.select(this).attr('class', 'highlight')
+  return tooltip
+    .style('visibility', 'visible')
+    .text(d.language + ' = ' + d.percent + ' %')
+}
+
+function onMouseOut(d, i) {
+  d3.select(this).attr('class', 'bar')
+  return tooltip.style('visibility', 'hidden')
+}
+
+// make the tooltip stick to the mouse
+function mouseMove() {
+  return tooltip
+    .style('top', event.pageY - 10 + 'px')
+    .style('left', event.pageX + 10 + 'px')
+}
+// color scale
+var color = d3.scaleOrdinal([
+  '#4daf4a',
+  '#377eb8',
+  '#ff7f00',
+  '#984ea3',
+  '#e41a1c'
+])
 // SVG Frame
 const margin = 60
 const width = 1000 - 2 * margin
@@ -30,7 +99,7 @@ chart.append('g').call(d3.axisLeft(yScale))
 const xScale = d3
   .scaleBand()
   .range([0, width])
-  .domain(data.map(s => s.lang))
+  .domain(percentages.map(s => s.language))
   .padding(0.2)
 
 chart
@@ -40,16 +109,24 @@ chart
 
 chart
   .selectAll()
-  .data(data)
+  .data(percentages)
   .enter()
   .append('rect')
   .attr(
     'x',
-    a => xScale(a.lang) + (xScale.bandwidth() - xScale.bandwidth()) / 2
+    a => xScale(a.language) + (xScale.bandwidth() - xScale.bandwidth()) / 2
   )
-  .attr('y', s => yScale(s.value))
-  .attr('height', s => height - yScale(s.value))
+  .attr('y', s => yScale(s.percent))
+  .attr('height', s => height - yScale(s.percent))
   .attr('width', xScale.bandwidth())
+  // mouse events
+  .on('mouseover', onMouseOver)
+  .on('mouseout', onMouseOut)
+  .on('mousemove', mouseMove)
+  // color
+  .attr('fill', function(d) {
+    return color(d.language)
+  })
 
 //grid horizontal
 chart

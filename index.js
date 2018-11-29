@@ -23,10 +23,11 @@ promises = []
 var amountPages = 5
 
 // Which year
-var year = 2000
+var year = 2018
 
 // Search query
-var query = 'year:' + year + ' test'
+//var query = 'year:' + year + ' web'
+var query = 'test'
 
 // Get results for each page
 for (var i = 0; i < amountPages; i++) getResults(i + 1, query)
@@ -49,6 +50,7 @@ function getResults(page, query) {
           var boekInstantie = {
             //pageId : id,
             id: parseInt(boek.id.nativeid),
+            query: query,
             titel: boek.titles.title.$t,
             taal:
               typeof boek.languages === 'undefined'
@@ -113,80 +115,72 @@ Promise.all(promises).then(function(res) {
   var cleanedBoeken = removeDuplicate(boeken.sort(dynamicSort('jaartal')), 'id')
 
   // Empty array for different languages
-  languages = []
+  // languages = []
 
-  var differentLanguages = removeDuplicate(cleanedBoeken, 'taal')
+  // var differentLanguages = removeDuplicate(cleanedBoeken, 'taal')
 
-  differentLanguages.forEach(function(boek) {
-    languages.push(boek.taal)
-    console.log(languages)
-  })
+  // differentLanguages.forEach(function(boek) {
+  //   languages.push(boek.taal)
+  //   console.log(languages)
+  // })
 
   // Code below needs to be updated to be dynamic
-  boekenDut = []
-  boekenEng = []
-  boekenGer = []
-  var boekenOther = 0
+  // boekenDut = []
+  // boekenEng = []
+  // boekenGer = []
+  // var boekenOther = 0
 
-  cleanedBoeken.forEach(function(boek) {
-    if (boek.taal === languages[0]) {
-      boekenDut.push(boek)
-    } else if (boek.taal === languages[1]) {
-      boekenEng.push(boek)
-    } else if (boek.taal === languages[2]) {
-      boekenGer.push(boek)
-    } else {
-      boekenOther++
-    }
-  })
+  // cleanedBoeken.forEach(function(boek) {
+  //   if (boek.taal === languages[0]) {
+  //     boekenDut.push(boek)
+  //   } else if (boek.taal === languages[1]) {
+  //     boekenEng.push(boek)
+  //   } else if (boek.taal === languages[2]) {
+  //     boekenGer.push(boek)
+  //   } else {
+  //     boekenOther++
+  //   }
+  // })
   //console.log(boekenDut)
 
-  console.log(
-    'Aantal boeken uit ' + year + ' in de taal Nederlands: ' + boekenDut.length
-  )
-  //console.log(boekenEng)
-  console.log(
-    'Aantal boeken uit ' + year + ' in de taal Engels: ' + boekenEng.length
-  )
-  console.log(
-    'Aantal boeken uit ' + year + ' in de taal Duits: ' + boekenGer.length
-  )
+  console.log(cleanedBoeken)
 
-  fs.writeFile(
-    'myjsonfile.json',
-    JSON.stringify(cleanedBoeken, null, '  '),
-    'utf8',
-    function() {}
-  )
-
-  var percentages = calculatePercentage(
-    boekenDut.length,
-    boekenEng.length,
-    boekenGer.length,
-    boekenOther
-  )
-  percentageArray.push(
-    { year: year, lang: 'Dutch', value: percentages[0] },
-    { year: year, lang: 'English', value: percentages[1] },
-    { year: year, lang: 'German', value: percentages[2] },
-    { year: year, lang: 'Other', value: percentages[3] }
-  )
-  console.log(percentageArray)
   fs.writeFile(
     'docs/percentages.json',
-    JSON.stringify(percentageArray, null, '  '),
+    JSON.stringify(cleanedBoeken, null, '  '),
     'utf8',
     function() {}
   )
 })
 
-// Calculate percentages
-function calculatePercentage(dut, eng, ger, other) {
-  var total = dut + eng + ger + other
-  var percentDut = (dut * 100) / total
-  var percentEng = (eng * 100) / total
-  var percentOther = (other * 100) / total
-  var percentGer = (ger * 100) / total
+//   var percentages = calculatePercentage(
+//     boekenDut.length,
+//     boekenEng.length,
+//     boekenGer.length,
+//     boekenOther
+//   )
+//   percentageArray.push(
+//     { year: year, lang: 'Dutch', value: percentages[0] },
+//     { year: year, lang: 'English', value: percentages[1] },
+//     { year: year, lang: 'German', value: percentages[2] },
+//     { year: year, lang: 'Other', value: percentages[3] }
+//   )
+//   console.log(percentageArray)
+//   fs.writeFile(
+//     'docs/percentages.json',
+//     JSON.stringify(percentageArray, null, '  '),
+//     'utf8',
+//     function() {}
+//   )
+// })
 
-  return [percentDut, percentEng, percentGer, percentOther]
-}
+// Calculate percentages
+// function calculatePercentage(dut, eng, ger, other) {
+//   var total = dut + eng + ger + other
+//   var percentDut = (dut * 100) / total
+//   var percentEng = (eng * 100) / total
+//   var percentOther = (other * 100) / total
+//   var percentGer = (ger * 100) / total
+
+//   return [percentDut, percentEng, percentGer, percentOther]
+// }

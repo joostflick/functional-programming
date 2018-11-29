@@ -1,6 +1,10 @@
 # Functional programming
 
-![Main view](./img/image1.png)
+![Main view](ScreenshotMain.png)
+
+[Try out my application here!](https://joostflick.github.io/frontend-data/)
+
+_links to old READMEs_
 
 [Old README about code](README-code.md)
 

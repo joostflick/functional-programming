@@ -1,6 +1,6 @@
 # Research case OBA using the OBA API
 
-For a more code-based approach, and a day by day report, [click here](README-old.md)
+For a more code-based approach, and a day by day report, [click here](README-code.md)
 
 ## Table of contents
 

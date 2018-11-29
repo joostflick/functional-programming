@@ -1,110 +1,23 @@
-# Research case OBA using the OBA API
+# Functional programming
 
-For a more code-based approach, and a day by day report, [click here](README-old.md)
+![Main view](./img/image1.png)
 
-## Table of contents
+## Installation & usage
 
-* OBA API
-* My research
-* Results
-* Problems
-* TO DO
+1. Download the project
+2. Run `npm install`
+3. To change the query edit the query var in index.js
+4. Run `npm start`
+5. Open docs/index.html in your browser
 
-## OBA API
+I implemented the following commands:
 
-Before formulating any of my main research points, I first had to explore the possibilities of the API provided by the OBA.
+`npm run build` runs browserify to make my application usable in a browser environment
 
-I read (most of) the documentation and experimented with different search queries using the [node-oba-api](https://github.com/rijkvanzanten/node-oba-api) by Rijk van Zanten.
+`npm run data` makes a get request to retrieve new data and add it to the d3 environment
 
-This made it possible to do a request and receive the results as json. These results were then written to a file by me.
+`npm start` runs both of the above commands, first retrieving data then building the app so it can be displayed in the browser
 
-I added the contents of this file to a [webbased json viewer](http://jsonviewer.stack.hu) and being able to view the data in a treelike structure greatly improved my understanding of the OBA API.
+## linting
 
-After experimenting with different ways to compose a search query I had enough information to start working on my research case.
-
-## My research
-
-At this point I knew roughly what type of data I could retrieve from the OBA API. Some of those gave me inspiration for my research questions;
-
-* Publishing year
-* Language of the book
-* Title of the book
-* Amount of pages
-* Book themes
-
-With this information I formulated the following research questions:
-
-1. Are there more English books as opposed to Dutch books since the Netherlands are becoming more internationally focussed?
-2. Are there certain subjects that have become more apparent over time (for example books about programming)?
-3. Over time, are there less books being added to the library because books as a medium are losing interest?
-4. Is there a correlation between the subject of a book and the thickness (or amount of pages) of that book?
-5. Which languages have the thickest books (amount of pages)?
-
-After researching the different datasets I could obtain using the API I decided to go with my first question; 
-
-"Over time, are there more English books in comparison to Dutch books in the OBA collection since the Netherlands are more and more internationally focussed?"
-
-Sub-questions related to this question:
-
-1. For each year, what is the proportion of the English books as opposed to the Dutch books?
-2. Which queries give an honest Dutch/English representation?
-3. Which values are needed to be able to see a change over the years?
-
-### Hypothesis
-*Each year the amount of English books as opposed to the amount of Dutch books grows*
-
-I decided to use the following data values per book:
-
-* ID
-* Publishing year
-* Language
-
-With these I filled a dataset with books from a certain year. This way I was able to see the distribution of Dutch/English books per year.
-
-I wrote a function to determine the percentage of books in each language so I could make a graph. This means that whenever I run it I receive the following data:
-
-```js
-[ { year: 2015, lang: 'Dutch', value: 63.333333333333336 },
-  { year: 2015, lang: 'English', value: 33.333333333333336 },
-  { year: 2015, lang: 'German', value: 3.333333333333335 },
-  { year: 2015, lang: 'Other', value: 0 } ]
-```
-For now I use multiple queries to request multiple years. 
-
-Per year I receive 5 pages of data, so 100 books. 
-
-When inserting those in my d3 visualisation I should already be able to see some sort of change in the amount of English books.
-
-For my first visualization of this data I decided go with a bar chart per year. Later I want this to be a grouped bar chart so you have a clear overview of multiple years like this:
-![Bar chart](./schets.jpeg)
-
-For the moment being I made a bar chart in d3 that shows English and Dutch books in percentage by year. By making a query to look up 100 books in 2010 and another one to look up 100 books in 2018 I can already make some comparisons.
-
-Example: 
-![screenshot 2010](./screenshot2010.png)
-![screenshot 2018](./screenshot2018.png)
-
-Visualization currently hosted [here](https://joostflick.github.io/functional-programming/)
-
-This very primitive comparison is an example of a way to prove my hypothesis. As you can see there are relatively more English books in the 2018 chart.
-
-As of now though, my sample size is way too small and the results are too inconsistent to draw any legitimate conclusions from these charts.
-
-## Results
-
-When doing several queries and applying them to my simple bar chart, I'm able to see an indication of the amount of English book growing. To get more definitive results I will have to obtain a bigger dataset. Furthermore I am still debating the best queries to use if I won't be able to retrieve ALL books. 
-
-## Problems
-
-Here are some of the things that made it harder for me to answer my research question:
-
-* Uncertainty about the amount of books needed to get significant results
-* What query to use to have a representative distribution of English and Dutch books
-* The best way to display my results
-* CORS implementation (and deciding where I wanted to host my graph)
-
-## TO DO (no particular order)
-
-- [ ] Make function to count languages and amount of books of that language dynamic instead of hardcoded
-- [ ] Send the data of a get request directly to my visualization (or even better: select a year in the dropdown on which the app does a request to retrieve the data for the graph)
-- [ ]  Rctx implementation for more requests (and less server load)
+I used prettier in VScode using the prettier defaults but with no closing `;`

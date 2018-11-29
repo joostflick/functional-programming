@@ -66,7 +66,7 @@ When adding the year: query this could form a base for my research case in which
 
 ## Data usage
 
-My get request fills an Array with book instances which have the following properties:
+My get request fills an Array with book instances sorted by year which have the following properties:
 
 - ID
 - query
@@ -78,3 +78,18 @@ My get request fills an Array with book instances which have the following prope
 At the moment my application only uses the language field in combination with the amount of times that language exists in the dataset. This way I can calculate the percentages to display in the bar chart.
 
 Although the rest of the fields of the book objects aren't used at the moment, they could be used to give the user more details about certain books in further iterations in the future.
+
+## Pain points
+
+- D3 functionality, converting blocks or observables to something I can use
+- Finding a convenient way to get my data to the browser to be used for my graphs (using localhost or browserify?)
+- Converting data to usable formats (this got a little easier when I moved my data cleaning logic to my d3 file)
+- Using D3 selectors without console logging almost everything
+
+## What would I have done differently if I had more time
+
+- Being able to make GET requests from the browser to be able to see the data change in real time
+- Styling
+- Using more of the data fields to give the user a more indepth look in why certain themes are more popular in certain languages
+- Making a dropdown to select the year to display (implemented in my [Frontend data repo](https://github.com/joostflick/frontend-data))
+- Using a wrapper like wouter made, or at least a more conform way to handle the get requests. Although I like the fact that I wrote this one myself it is far from perfect.

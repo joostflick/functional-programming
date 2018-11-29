@@ -24,6 +24,14 @@ I implemented the following commands:
 
 ## What did I change for the redo?
 
+#### Before:
+
+![Main view](screenshot2010.png)
+
+#### After:
+
+![Main view](screenshotNew.png)
+
 ### Browserify
 
 I added browserify to be able to display external data in my d3 graph. This way it's possible to just use one script to retrieve data and display it.
@@ -38,4 +46,31 @@ I changed the functionality of the application to display the percentage differe
 
 This gives valuable insights I could have used during front-end data.
 
-### Tooltip & colors
+### Mouse events & colors
+
+I added a tooltip when hovering a bar, showing the percentage and language. This data will also be displayed on top of the graph when clicking one of the bars. Also each language is now assigned a color.
+
+### Animations
+
+I added a simple entrance animation for the bar chart.
+
+## Functionality of the application
+
+Display the distribution of all languages for a certain query. The user can interact with the bars to see the exact percentages.
+
+When adding the year: query this could form a base for my research case in which I try to find correlations between certain queries and how their language distribution has changed over the years.
+
+## Data usage
+
+My get request fills an Array with book instances which have the following properties:
+
+- ID
+- query
+- title
+- language
+- year
+- author
+
+At the moment my application only uses the language field in combination with the amount of times that language exists in the dataset. This way I can calculate the percentages to display in the bar chart.
+
+Although the rest of the fields of the book objects aren't used at the moment, they could be used to give the user more details about certain books in further iterations in the future.

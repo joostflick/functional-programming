@@ -34,7 +34,7 @@ I implemented the following commands:
 
 #### After:
 
-![Main view](screenshotNew.png)
+![Main view](ScreenshotNew.png)
 
 ### Browserify
 
